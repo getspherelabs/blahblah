@@ -11,7 +11,7 @@ kotlin {
             }
         }
     }
-    
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -25,8 +25,8 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("net.mamoe.yamlkt:yamlkt:0.12.0")
-                implementation("com.squareup.okio:okio:3.5.0")
+                implementation(Deps.Yaml.kt)
+                implementation(Deps.IO.okio)
             }
         }
         val commonTest by getting {

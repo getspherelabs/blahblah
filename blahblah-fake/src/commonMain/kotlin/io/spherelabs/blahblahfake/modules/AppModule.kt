@@ -2,7 +2,6 @@ package io.spherelabs.blahblahfake.modules
 
 import io.spherelabs.blahblahfake.path.AppPath
 import io.spherelabs.blahblahfake.provider.Provider
-
 import kotlin.jvm.JvmInline
 
 class AppModule(
