@@ -14,7 +14,9 @@ class ProviderTest {
     fun `check the path is correct type`() {
         val yamlProvider = yamlProvider {
             yamlParser = yamlParser {
-                resourcePath = "src/commonTest/resources/en.yml"
+                resourcePath {
+                    "src/commonTest/resources/en.yml"
+                }
                 sectionKey = "blah-blah"
             }
         }

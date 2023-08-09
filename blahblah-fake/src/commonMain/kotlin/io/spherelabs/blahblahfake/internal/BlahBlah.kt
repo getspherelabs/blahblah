@@ -1,33 +1,23 @@
 package io.spherelabs.blahblahfake.internal
 
-import io.spherelabs.blahblahfake.dictionary.*
-import io.spherelabs.blahblahfake.dictionary.Name
+
 import io.spherelabs.blahblahfake.modules.*
-import io.spherelabs.blahblahyaml.parser.yamlParser
-import io.spherelabs.blahblahyaml.provider.yamlProvider
-import kotlin.Number
+
 
 interface BlahBlah {
     public val address: AddressModule
     public val app: AppModule
-    public val business: Business
     public val animal: AnimalModule
     public val university: UniversityModule
-    public val company: Company
-    public val gender: Gender
-    public val internet: Internet
-    public val lorem: Lorem
-    public val name: Name
-    public val phoneNumber: PhoneNumber
-    public val team: Team
-    public val number: Number
-    public val bank: Bank
-    public val date: Date
-    public val hobbit: Hobbit
-    public val car: Car
-    public val programmingLanguage: ProgrammingLanguage
-    public val vehicle: Vehicle
-    public val house: House
+    public val artist: ArtistModule
+    public val company: CompanyModule
+    public val compass: CompassModule
+    public val internet: InternetModule
+    public val lorem: LoremModule
+    public val hipster: HipsterModule
+    public val name: NameModule
+    public val creditCard: CreditCardModule
+    public val color: ColorModule
 }
 
 internal class DefaultBlahBlah(
@@ -35,67 +25,66 @@ internal class DefaultBlahBlah(
 ) : BlahBlah {
 
     override val address: AddressModule by lazy {
-        addressModule(configuration.yamlProvider)
+        addressModule { configuration.yamlProvider }
     }
 
     override val animal: AnimalModule by lazy {
-        animalModule(configuration.yamlProvider)
+        animalModule { configuration.yamlProvider }
     }
 
     override val app: AppModule by lazy {
-        appModule(configuration.yamlProvider)
+        appModule { configuration.yamlProvider }
     }
 
     override val university: UniversityModule by lazy {
-        universityModule(configuration.yamlProvider)
+        universityModule { configuration.yamlProvider }
     }
 
-    override val business: Business
-        get() = TODO("Not yet implemented")
+    override val artist: ArtistModule by lazy {
+        artistModule { configuration.yamlProvider }
+    }
 
-    override val company: Company
-        get() = TODO("Not yet implemented")
-    override val gender: Gender
-        get() = TODO("Not yet implemented")
-    override val internet: Internet
-        get() = TODO("Not yet implemented")
-    override val lorem: Lorem
-        get() = TODO("Not yet implemented")
-    override val name: Name
-        get() = TODO("Not yet implemented")
-    override val phoneNumber: PhoneNumber
-        get() = TODO("Not yet implemented")
-    override val team: Team
-        get() = TODO("Not yet implemented")
-    override val number: Number
-        get() = TODO("Not yet implemented")
-    override val bank: Bank
-        get() = TODO("Not yet implemented")
-    override val date: Date
-        get() = TODO("Not yet implemented")
-    override val hobbit: Hobbit
-        get() = TODO("Not yet implemented")
-    override val car: Car
-        get() = TODO("Not yet implemented")
-    override val programmingLanguage: ProgrammingLanguage
-        get() = TODO("Not yet implemented")
-    override val vehicle: Vehicle
-        get() = TODO("Not yet implemented")
-    override val house: House
-        get() = TODO("Not yet implemented")
+    override val company: CompanyModule by lazy {
+        companyModule { configuration.yamlProvider }
+    }
+
+    override val compass: CompassModule by lazy {
+        compassModule { configuration.yamlProvider }
+    }
+
+    override val internet: InternetModule by lazy {
+        internetModule { configuration.yamlProvider }
+    }
+
+    override val lorem: LoremModule by lazy {
+        loremModule { configuration.yamlProvider }
+    }
+
+    override val hipster: HipsterModule by lazy {
+        hipsterModule { configuration.yamlProvider }
+    }
+
+    override val name: NameModule by lazy {
+        nameModule { configuration.yamlProvider }
+    }
+
+    override val creditCard: CreditCardModule by lazy {
+        creditCardModule { configuration.yamlProvider }
+    }
+
+    override val color: ColorModule by lazy {
+        colorModule { configuration.yamlProvider }
+    }
 }
 
-fun blahBlah(newLocale: String = "en"): BlahBlah {
+fun blahBlah(
+    newLocale: String = "en",
+    resourcePath: () -> String = { "src/commonTest/resources/en.yml" }
+): BlahBlah {
     return DefaultBlahBlah(
         configuration = configs {
             locale = newLocale
-            provider = yamlProvider {
-                yamlParser = yamlParser {
-                    locale = newLocale
-                    resourcePath = "src/commonTest/resources/en.yml"
-                    sectionKey = "blah-blah"
-                }
-            }
+            path = resourcePath.invoke()
         }
     )
 }

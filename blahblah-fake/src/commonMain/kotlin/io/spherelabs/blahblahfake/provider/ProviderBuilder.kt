@@ -27,8 +27,16 @@ class ProviderBuilder {
             ProviderType.Animal -> AnimalProvider(yamlProvider)
             ProviderType.App -> AppProvider(yamlProvider)
             ProviderType.University -> UniversityProvider(yamlProvider)
+            ProviderType.Artist -> ArtistProvider(yamlProvider)
             null -> throw UninitializedProviderTypeException()
-
+            ProviderType.Company -> CompanyProvider(yamlProvider)
+            ProviderType.Compass -> CompassProvider(yamlProvider)
+            ProviderType.Internet -> InternetProvider(yamlProvider)
+            ProviderType.Lorem -> LoremProvider(yamlProvider)
+            ProviderType.Hipster -> HipsterProvider(yamlProvider)
+            ProviderType.Name -> NameProvider(yamlProvider)
+            ProviderType.CreditCard -> CreditCardProvider(yamlProvider)
+            ProviderType.Color -> ColorProvider(yamlProvider)
         }
     }
 }

@@ -3,11 +3,19 @@ package io.spherelabs.blahblahyaml.parser
 import io.spherelabs.blahblahyaml.annotation.YamlParserDsl
 import net.mamoe.yamlkt.Yaml
 
+
+
 @YamlParserDsl
 class YamlParserBuilder(private val yaml: Yaml) {
     var locale: String = "en"
-    var resourcePath: String? = null
+    private var resourcePath: String? = null
     var sectionKey: String? = null
+
+    fun resourcePath(path: () -> String) {
+        println("Path is $path")
+        resourcePath = path.invoke()
+        println("Resource Path is $resourcePath")
+    }
 
     fun build(): YamlParser = DefaultYamlParser(
         yaml = yaml,
@@ -21,8 +29,10 @@ class YamlParserBuilder(private val yaml: Yaml) {
     )
 }
 
-inline fun yamlParser(yaml: Yaml = Yaml(), parserBuilder: YamlParserBuilder.() -> Unit): YamlParser {
-    val builder = YamlParserBuilder(yaml)
-    builder.parserBuilder()
+inline fun yamlParser(
+    yaml: Yaml = Yaml(),
+    parserBuilder: YamlParserBuilder.() -> Unit
+): YamlParser {
+    val builder = YamlParserBuilder(yaml).also(parserBuilder)
     return builder.build()
 }

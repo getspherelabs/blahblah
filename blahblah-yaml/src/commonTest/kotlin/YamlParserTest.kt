@@ -9,7 +9,7 @@ class YamlParserTest {
     @Test
     fun `check yaml parser is working properly`() {
         val yamlParser = yamlParser {
-            resourcePath = "src/commonTest/resources/en.yml"
+            resourcePath { "src/commonTest/resources/en.yml" }
             sectionKey = "blah-blah"
         }
 
@@ -29,7 +29,9 @@ class YamlParserTest {
     fun `check yaml parser if it does not exist`() {
         assertFailsWith(IllegalStateException::class, "Section key is not initialized") {
             val yamlParser = yamlParser {
-                resourcePath = "src/commonTest/resources/test.yml"
+                resourcePath  {
+                    "src/commonTest/resources/test.yml"
+                }
             }
         }
     }
