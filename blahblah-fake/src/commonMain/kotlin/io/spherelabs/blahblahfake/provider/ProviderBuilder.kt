@@ -37,6 +37,7 @@ class ProviderBuilder {
             ProviderType.Name -> NameProvider(yamlProvider)
             ProviderType.CreditCard -> CreditCardProvider(yamlProvider)
             ProviderType.Color -> ColorProvider(yamlProvider)
+            ProviderType.Commerce -> CommerceProvider(yamlProvider)
         }
     }
 }

@@ -18,6 +18,7 @@ interface BlahBlah {
     public val name: NameModule
     public val creditCard: CreditCardModule
     public val color: ColorModule
+    public val commerce: CommerceModule
 }
 
 internal class DefaultBlahBlah(
@@ -74,6 +75,10 @@ internal class DefaultBlahBlah(
 
     override val color: ColorModule by lazy {
         colorModule { configuration.yamlProvider }
+    }
+
+    override val commerce: CommerceModule by lazy {
+        commerceModule { configuration.yamlProvider }
     }
 }
 

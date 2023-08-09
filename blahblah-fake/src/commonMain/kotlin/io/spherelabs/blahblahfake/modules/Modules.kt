@@ -95,3 +95,10 @@ internal fun colorModule(yamlProvider: () -> YamlProvider): ColorModule {
         yamlProvider(yamlProvider())
     })
 }
+
+internal fun commerceModule(yamlProvider: () -> YamlProvider): CommerceModule {
+    return CommerceModule(provider = provider {
+        type(ProviderType.Commerce)
+        yamlProvider(yamlProvider())
+    })
+}

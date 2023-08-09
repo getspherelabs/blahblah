@@ -13,5 +13,6 @@ enum class ProviderType {
     Hipster,
     Name,
     CreditCard,
-    Color
+    Color,
+    Commerce
 }
