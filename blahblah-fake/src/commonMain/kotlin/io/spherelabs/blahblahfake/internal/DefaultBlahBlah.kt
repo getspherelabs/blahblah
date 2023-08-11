@@ -34,6 +34,7 @@ import io.spherelabs.blahblahfake.modules.SpaceModule
 import io.spherelabs.blahblahfake.modules.SuperHeroModule
 import io.spherelabs.blahblahfake.modules.TeamModule
 import io.spherelabs.blahblahfake.modules.UniversityModule
+import io.spherelabs.blahblahfake.modules.UuidModule
 import io.spherelabs.blahblahfake.modules.YodaModule
 import io.spherelabs.blahblahfake.modules.ZeldaModule
 import io.spherelabs.blahblahfake.modules.addressModule
@@ -70,6 +71,7 @@ import io.spherelabs.blahblahfake.modules.spaceModule
 import io.spherelabs.blahblahfake.modules.superHeroModule
 import io.spherelabs.blahblahfake.modules.teamModule
 import io.spherelabs.blahblahfake.modules.universityModule
+import io.spherelabs.blahblahfake.modules.uuidModule
 import io.spherelabs.blahblahfake.modules.yodaModule
 import io.spherelabs.blahblahfake.modules.zeldaModule
 
@@ -219,5 +221,9 @@ internal class DefaultBlahBlah(
 
     override val job: JobModule by lazy {
         jobModule { configuration.yamlProvider }
+    }
+
+    override val uuid: UuidModule by lazy {
+        uuidModule()
     }
 }

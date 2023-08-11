@@ -1,0 +1,44 @@
+---
+title: Core Concepts
+---
+
+## YamlParser
+
+YamlParser for parsing YAML files and retrieving values organized in a specific structure.
+
+```kt
+interface YamlParser {
+    fun values(): YamlResource
+}
+
+```
+## YamlProvider
+
+YamlProvider for providing values fetched from YAML resources using specified keys.
+
+```kt
+interface YamlProvider {
+    fun get(key: String): String
+}
+```
+
+## Provider
+
+Provider representing a provider that retrieves content from a specified path. It is a bridge between module and yaml provider.
+
+```kt
+public interface Provider {
+    public  fun get(path: Path): String
+}
+
+```
+## Path
+
+Path representing a path to a resource.It is not Okio path.
+
+```kt
+public interface Path {
+    public val value: String
+}
+
+```

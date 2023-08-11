@@ -1,5 +1,8 @@
 package io.spherelabs.blahblahfake.path
 
+import io.spherelabs.blahblahfake.annotation.BlahBlahInternalApi
+
+@BlahBlahInternalApi
 internal enum class CommercePath(override val value: String) : Path {
     Department("commerce.department"),
     Adjective("commerce.product_name.adjective"),

@@ -1,5 +1,8 @@
 package io.spherelabs.blahblahfake.path
 
+import io.spherelabs.blahblahfake.annotation.BlahBlahInternalApi
+
+@BlahBlahInternalApi
 internal enum class InternetPath(override val value: String) : Path {
     FreeEmail("internet.free_email"),
     SafeEmail("internet.safe_email"),

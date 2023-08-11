@@ -1,0 +1,64 @@
+---
+title: Getting Started
+---
+
+
+This guide will get you running with a Blah-Blah installation in one minute!
+
+## Setup
+
+Add the dependency below into your module's `build.gradle.kts` file:
+
+```kt
+// For development
+
+// It includes blah-blah fake.
+implementation("io.github.behzodhalil:blahblah-fake:<latest-version>")
+// If only need yaml parser
+implementation("io.github.behzodhalil:blahblah-yaml:<latest-version>")
+// If only need random
+implementation("io.github.behzodhalil:blahblah-random:<latest-version>")
+
+// For testing
+
+// It includes blah-blah fake.
+testImplementation("io.github.behzodhalil:blahblah-fake:<latest-version>")
+// If only need yaml parser
+testImplementation("io.github.behzodhalil:blahblah-yaml:<latest-version>")
+// If only need random
+testImplementation("io.github.behzodhalil:blahblah-random:<latest-version>")
+
+```
+## Usage
+
+### Testing
+
+class BlahBlahTest {
+
+    private lateinit var blah: BlahBlah
+
+    @BeforeTest
+    fun setup() {
+        blah = blah()
+    }
+
+    @Test
+    fun `check the blah blah works properly`() {
+        val city = blah.address.city
+        val state = blah.address.state
+
+        assertNotNull(city)
+        assertNotNull(state)
+    }
+
+    @Test
+    fun `check the street address gets successfully`() {
+        val streetAddress = blah.address.streetAddress
+
+
+        assertNotNull(streetAddress)
+        assertTrue(streetAddress.isDigit())
+    }
+}
+
+

@@ -1,5 +1,6 @@
 package io.spherelabs.blahblahfake.provider
 
+import io.spherelabs.blahblahfake.annotation.BlahBlahInternalApi
 import io.spherelabs.blahblahfake.exception.UninitializedProviderTypeException
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
@@ -12,6 +13,7 @@ internal fun provider(block: ProviderBuilder.() -> Unit): Provider {
 /**
  * [ProviderBuilder] for creating and configuring Provider instances using DSL-style configuration.
  */
+@BlahBlahInternalApi
 internal class ProviderBuilder {
     private var providerType: ProviderType? = null
     private lateinit var yamlProvider: YamlProvider

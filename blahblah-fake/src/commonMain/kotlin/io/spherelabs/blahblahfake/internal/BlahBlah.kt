@@ -43,6 +43,7 @@ public interface BlahBlah {
     public val zelda: ZeldaModule
     public val rockBand: RockBandModule
     public val job: JobModule
+    public val uuid: UuidModule
 }
 
 

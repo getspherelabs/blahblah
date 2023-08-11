@@ -39,6 +39,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("net.mamoe.yamlkt:yamlkt:0.12.0")
+                implementation( "com.benasher44:uuid:0.2.2")
                 implementation(project(":blahblah-yaml"))
             }
         }

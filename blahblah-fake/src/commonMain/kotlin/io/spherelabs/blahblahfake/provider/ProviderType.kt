@@ -1,5 +1,8 @@
 package io.spherelabs.blahblahfake.provider
 
+import io.spherelabs.blahblahfake.annotation.BlahBlahInternalApi
+
+@BlahBlahInternalApi
 internal enum class ProviderType {
     Address,
     Animal,
