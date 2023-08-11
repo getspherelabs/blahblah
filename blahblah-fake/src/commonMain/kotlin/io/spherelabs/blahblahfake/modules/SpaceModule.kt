@@ -7,25 +7,25 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class SpaceModule(
+public class SpaceModule(
     private val provider: Provider
 ) {
-    val planet: Planet get() = Planet(provider.get(SpacePath.Planet))
-    val moon: Moon get() = Moon(provider.get(SpacePath.Moon))
-    val galaxy: Galaxy get() = Galaxy(provider.get(SpacePath.Galaxy))
-    val nebula: Nebula get() = Nebula(provider.get(SpacePath.Nebula))
-    val star: Star get() = Star(provider.get(SpacePath.Star))
-    val cluster: Cluster get() = Cluster(provider.get(SpacePath.Cluster))
-    val constellation: Constellation get() = Constellation(provider.get(SpacePath.Constellation))
-    val agency: Agency get() = Agency(provider.get(SpacePath.Agency))
-    val agencyAbr: AgencyAbr get() = AgencyAbr(provider.get(SpacePath.AgencyAbr))
-    val company: Company get() = Company(provider.get(SpacePath.Company))
-    val measurement: Measurement get() = Measurement(provider.get(SpacePath.Measurement))
-    val meteor: Meteor get() = Meteor(provider.get(SpacePath.Meteor))
+    public val planet: Planet get() = Planet(provider.get(SpacePath.Planet))
+    public val moon: Moon get() = Moon(provider.get(SpacePath.Moon))
+    public val galaxy: Galaxy get() = Galaxy(provider.get(SpacePath.Galaxy))
+    public val nebula: Nebula get() = Nebula(provider.get(SpacePath.Nebula))
+    public val star: Star get() = Star(provider.get(SpacePath.Star))
+    public val cluster: Cluster get() = Cluster(provider.get(SpacePath.Cluster))
+    public val constellation: Constellation get() = Constellation(provider.get(SpacePath.Constellation))
+    public val agency: Agency get() = Agency(provider.get(SpacePath.Agency))
+    public val agencyAbr: AgencyAbr get() = AgencyAbr(provider.get(SpacePath.AgencyAbr))
+    public val company: Company get() = Company(provider.get(SpacePath.Company))
+    public val measurement: Measurement get() = Measurement(provider.get(SpacePath.Measurement))
+    public val meteor: Meteor get() = Meteor(provider.get(SpacePath.Meteor))
 }
 
 @JvmInline
-value class Planet(
+public value class Planet(
     private val value: String
 ) {
     override fun toString(): String {
@@ -34,7 +34,7 @@ value class Planet(
 }
 
 @JvmInline
-value class Moon(
+public value class Moon(
     private val value: String
 ) {
     override fun toString(): String {
@@ -43,7 +43,7 @@ value class Moon(
 }
 
 @JvmInline
-value class Galaxy(
+public value class Galaxy(
     private val value: String
 ) {
     override fun toString(): String {
@@ -52,7 +52,7 @@ value class Galaxy(
 }
 
 @JvmInline
-value class Nebula(
+public value class Nebula(
     private val value: String
 ) {
     override fun toString(): String {
@@ -61,7 +61,7 @@ value class Nebula(
 }
 
 @JvmInline
-value class Star(
+public value class Star(
     private val value: String
 ) {
     override fun toString(): String {
@@ -70,7 +70,7 @@ value class Star(
 }
 
 @JvmInline
-value class Cluster(
+public value class Cluster(
     private val value: String
 ) {
     override fun toString(): String {
@@ -81,7 +81,7 @@ value class Cluster(
 
 
 @JvmInline
-value class Constellation(
+public value class Constellation(
     private val value: String
 ) {
     override fun toString(): String {
@@ -90,7 +90,7 @@ value class Constellation(
 }
 
 @JvmInline
-value class Agency (
+public value class Agency (
     private val value: String
 ) {
     override fun toString(): String {
@@ -99,7 +99,7 @@ value class Agency (
 }
 
 @JvmInline
-value class AgencyAbr(
+public value class AgencyAbr(
     private val value: String
 ) {
     override fun toString(): String {
@@ -108,7 +108,7 @@ value class AgencyAbr(
 }
 
 @JvmInline
-value class SpaceCraft(
+public value class SpaceCraft(
     private val value: String
 ) {
     override fun toString(): String {
@@ -117,7 +117,7 @@ value class SpaceCraft(
 }
 
 @JvmInline
-value class Company(
+public value class Company(
     private val value: String
 ) {
     override fun toString(): String {
@@ -126,7 +126,7 @@ value class Company(
 }
 
 @JvmInline
-value class Measurement(
+public value class Measurement(
     private val value: String
 ) {
     override fun toString(): String {
@@ -135,7 +135,7 @@ value class Measurement(
 }
 
 @JvmInline
-value class Meteor(
+public value class Meteor(
     private val value: String
 ) {
     override fun toString(): String {

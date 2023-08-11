@@ -1,6 +1,6 @@
 package io.spherelabs.blahblahfake.path
 
-enum class InternetPath(override val value: String) : Path {
+internal enum class InternetPath(override val value: String) : Path {
     FreeEmail("internet.free_email"),
     SafeEmail("internet.safe_email"),
     DomainSuffix("internet.domain_suffix"),

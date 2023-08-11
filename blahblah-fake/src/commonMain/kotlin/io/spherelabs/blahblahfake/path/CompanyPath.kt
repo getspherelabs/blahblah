@@ -1,6 +1,6 @@
 package io.spherelabs.blahblahfake.path
 
-enum class CompanyPath(override val value: String) : Path {
+internal enum class CompanyPath(override val value: String) : Path {
     Buzzwords("company.buzzwords"),
     Name("company.name"),
     Bs("company.bs"),

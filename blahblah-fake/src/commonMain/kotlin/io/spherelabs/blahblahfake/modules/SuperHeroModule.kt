@@ -6,10 +6,10 @@ import io.spherelabs.blahblahfake.provider.ProviderType
 import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class SuperHeroModule(
+public class SuperHeroModule(
     private val provider: Provider
 ) {
-    val name: Name get() = Name(provider.get(SuperHeroPath.Name))
+    public val name: Name get() = Name(provider.get(SuperHeroPath.Name))
 }
 
 

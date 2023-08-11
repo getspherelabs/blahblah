@@ -4,17 +4,17 @@ import io.spherelabs.blahblahfake.path.CreditCardPath
 import io.spherelabs.blahblahfake.provider.Provider
 import kotlin.jvm.JvmInline
 
-class CreditCardModule(
+public class CreditCardModule(
     private val provider: Provider
 ) {
-    val numbers: Numbers get() = Numbers(provider.get(CreditCardPath.Numbers))
-    val expiryDates: ExpiryDates get() = ExpiryDates(provider.get(CreditCardPath.ExpiryDates))
-    val types: Types get() = Types(provider.get(CreditCardPath.Types))
+    public val numbers: Numbers get() = Numbers(provider.get(CreditCardPath.Numbers))
+    public val expiryDates: ExpiryDates get() = ExpiryDates(provider.get(CreditCardPath.ExpiryDates))
+    public val types: Types get() = Types(provider.get(CreditCardPath.Types))
 }
 
 @JvmInline
-value class Numbers(
-    val value: String
+public value class Numbers(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -22,8 +22,8 @@ value class Numbers(
 }
 
 @JvmInline
-value class ExpiryDates(
-    val value: String
+public value class ExpiryDates(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -31,8 +31,8 @@ value class ExpiryDates(
 }
 
 @JvmInline
-value class Types(
-    val value: String
+public value class Types(
+    private val value: String
 ) {
     override fun toString(): String {
         return value

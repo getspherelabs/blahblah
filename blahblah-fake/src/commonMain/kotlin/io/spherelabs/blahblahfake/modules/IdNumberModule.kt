@@ -7,15 +7,15 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class IdNumberModule(
+public class IdNumberModule(
     private val provider: Provider
 ) {
-    val valid: Valid get() = Valid(provider.get(IdNumberPath.Valid))
-    val invalid: Invalid get() = Invalid(provider.get(IdNumberPath.Invalid))
+    public val valid: Valid get() = Valid(provider.get(IdNumberPath.Valid))
+    public val invalid: Invalid get() = Invalid(provider.get(IdNumberPath.Invalid))
 }
 
 @JvmInline
-value class Valid(
+public value class Valid(
     private val value: String
 ) {
     override fun toString(): String {
@@ -24,7 +24,7 @@ value class Valid(
 }
 
 @JvmInline
-value class Invalid(
+public value class Invalid(
     private val value: String
 ) {
     override fun toString(): String {

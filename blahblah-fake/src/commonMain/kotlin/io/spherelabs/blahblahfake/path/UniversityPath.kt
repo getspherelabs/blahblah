@@ -1,5 +1,5 @@
 package io.spherelabs.blahblahfake.path
 
-enum class UniversityPath (override val value: String): Path {
+internal enum class UniversityPath (override val value: String): Path {
     Name("university.name")
 }

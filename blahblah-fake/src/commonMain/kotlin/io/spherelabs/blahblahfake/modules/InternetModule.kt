@@ -4,21 +4,21 @@ import io.spherelabs.blahblahfake.path.InternetPath
 import io.spherelabs.blahblahfake.provider.Provider
 import kotlin.jvm.JvmInline
 
-class InternetModule(
+public class InternetModule(
     private val provider: Provider
 ) {
-    val freeEmail: FreeEmail get() = FreeEmail(provider.get(InternetPath.FreeEmail))
-    val safeEmail: SafeEmail get() = SafeEmail(provider.get(InternetPath.SafeEmail))
-    val domainSuffix: DomainSuffix get() = DomainSuffix(provider.get(InternetPath.DomainSuffix))
-    val avatar: Avatar get() = Avatar(provider.get(InternetPath.Avatar))
-    val imageCategory: ImageCategory get() = ImageCategory(provider.get(InternetPath.ImageCategory))
-    val imageDimension: ImageDimension get() = ImageDimension(provider.get(InternetPath.ImageDimension))
-    val userAgent: UserAgent get() = UserAgent(provider)
+    public val freeEmail: FreeEmail get() = FreeEmail(provider.get(InternetPath.FreeEmail))
+    public val safeEmail: SafeEmail get() = SafeEmail(provider.get(InternetPath.SafeEmail))
+    public val domainSuffix: DomainSuffix get() = DomainSuffix(provider.get(InternetPath.DomainSuffix))
+    public val avatar: Avatar get() = Avatar(provider.get(InternetPath.Avatar))
+    public val imageCategory: ImageCategory get() = ImageCategory(provider.get(InternetPath.ImageCategory))
+    public val imageDimension: ImageDimension get() = ImageDimension(provider.get(InternetPath.ImageDimension))
+    public val userAgent: UserAgent get() = UserAgent(provider)
 }
 
 @JvmInline
-value class FreeEmail(
-    val value: String
+public value class FreeEmail(
+    private val value: String
 ) {
     override fun toString(): String {
        return value
@@ -27,8 +27,8 @@ value class FreeEmail(
 
 
 @JvmInline
-value class SafeEmail(
-    val value: String
+public value class SafeEmail(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -37,8 +37,8 @@ value class SafeEmail(
 
 
 @JvmInline
-value class DomainSuffix(
-    val value: String
+public value class DomainSuffix(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -47,8 +47,8 @@ value class DomainSuffix(
 
 
 @JvmInline
-value class Avatar(
-    val value: String
+public value class Avatar(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -56,8 +56,8 @@ value class Avatar(
 }
 
 @JvmInline
-value class ImageCategory(
-    val value: String
+public value class ImageCategory(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -65,29 +65,29 @@ value class ImageCategory(
 }
 
 @JvmInline
-value class ImageDimension(
-    val value: String
+public value class ImageDimension(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
     }
 }
 
-class UserAgent(
+public class UserAgent(
     private val provider: Provider
 ) {
-    val aol: Aol get() = Aol(provider.get(InternetPath.Aol))
-    val chrome: Chrome get() = Chrome(provider.get(InternetPath.Chrome))
-    val internetExplorer: InternetExplorer get() = InternetExplorer(provider.get(InternetPath.InternetExplorer))
-    val opera: Opera get() = Opera(provider.get(InternetPath.Opera))
-    val netscape: Netscape get() = Netscape(provider.get(InternetPath.Netscape))
-    val safari: Safari get() = Safari(provider.get(InternetPath.Safari))
-    val mozilla: Mozilla get() = Mozilla(provider.get(InternetPath.Mozilla))
+    public val aol: Aol get() = Aol(provider.get(InternetPath.Aol))
+    public val chrome: Chrome get() = Chrome(provider.get(InternetPath.Chrome))
+    public val internetExplorer: InternetExplorer get() = InternetExplorer(provider.get(InternetPath.InternetExplorer))
+    public val opera: Opera get() = Opera(provider.get(InternetPath.Opera))
+    public val netscape: Netscape get() = Netscape(provider.get(InternetPath.Netscape))
+    public val safari: Safari get() = Safari(provider.get(InternetPath.Safari))
+    public val mozilla: Mozilla get() = Mozilla(provider.get(InternetPath.Mozilla))
 }
 
 @JvmInline
-value class Aol(
-    val value: String
+public value class Aol(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -95,8 +95,8 @@ value class Aol(
 }
 
 @JvmInline
-value class Chrome(
-    val value: String
+public value class Chrome(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -104,8 +104,8 @@ value class Chrome(
 }
 
 @JvmInline
-value class InternetExplorer(
-    val value: String
+public value class InternetExplorer(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -113,8 +113,8 @@ value class InternetExplorer(
 }
 
 @JvmInline
-value class Opera(
-    val value: String
+public value class Opera(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -122,8 +122,8 @@ value class Opera(
 }
 
 @JvmInline
-value class Netscape(
-    val value: String
+public value class Netscape(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -131,8 +131,8 @@ value class Netscape(
 }
 
 @JvmInline
-value class Safari(
-    val value: String
+public value class Safari(
+    private val value: String
 ) {
     override fun toString(): String {
         return value
@@ -140,8 +140,8 @@ value class Safari(
 }
 
 @JvmInline
-value class Mozilla(
-    val value: String
+public value class Mozilla(
+    private val value: String
 ) {
     override fun toString(): String {
         return value

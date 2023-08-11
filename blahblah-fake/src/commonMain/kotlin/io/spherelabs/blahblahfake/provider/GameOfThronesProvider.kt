@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.GameOfThronesPath
 import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class GameOfThronesProvider(
+internal class GameOfThronesProvider(
     private val yamlProvider: YamlProvider
 ) : Provider {
 

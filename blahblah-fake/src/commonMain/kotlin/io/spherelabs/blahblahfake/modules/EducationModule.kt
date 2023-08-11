@@ -7,17 +7,17 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class EducationModule(
+public class EducationModule(
     private val provider: Provider
 ) {
-    val course: CourseModule get() = CourseModule(provider)
-    val secondary: Secondary get() = Secondary(provider.get(EducatorPath.Secondary))
-    val name: Name get() = Name(provider.get(EducatorPath.Name))
-    val type: Type get() = Type(provider.get(EducatorPath.Type))
+    public val course: CourseModule get() = CourseModule(provider)
+    public val secondary: Secondary get() = Secondary(provider.get(EducatorPath.Secondary))
+    public val name: Name get() = Name(provider.get(EducatorPath.Name))
+    public val type: Type get() = Type(provider.get(EducatorPath.Type))
 }
 
 @JvmInline
-value class Secondary(
+public value class Secondary(
     private val value: String
 ) {
     override fun toString(): String {
@@ -26,7 +26,7 @@ value class Secondary(
 }
 
 @JvmInline
-value class Type(
+public value class Type(
     private val value: String
 ) {
     override fun toString(): String {
@@ -34,15 +34,15 @@ value class Type(
     }
 }
 
-class CourseModule(
+public class CourseModule(
     private val provider: Provider
 ) {
-    val type: Type get() = Type(provider.get(EducatorPath.CourseType))
-    val subject: Subject get() = Subject(provider.get(EducatorPath.CourseSubject))
+    public val type: Type get() = Type(provider.get(EducatorPath.CourseType))
+    public val subject: Subject get() = Subject(provider.get(EducatorPath.CourseSubject))
 }
 
 @JvmInline
-value class Subject(
+public value class Subject(
     private val value: String
 ) {
     override fun toString(): String {

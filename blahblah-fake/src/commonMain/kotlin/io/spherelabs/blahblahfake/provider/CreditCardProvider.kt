@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.CreditCardPath
 import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class CreditCardProvider(
+internal class CreditCardProvider(
     private val yamlProvider: YamlProvider
 ) : Provider {
 

@@ -4,7 +4,7 @@ package io.spherelabs.blahblahfake.internal
 import io.spherelabs.blahblahfake.modules.*
 
 
-interface BlahBlah {
+public interface BlahBlah {
     public val address: AddressModule
     public val app: AppModule
     public val animal: AnimalModule
@@ -19,77 +19,28 @@ interface BlahBlah {
     public val creditCard: CreditCardModule
     public val color: ColorModule
     public val commerce: CommerceModule
+    public val team: TeamModule
+    public val hacker: HackerModule
+    public val idNumber: IdNumberModule
+    public val emoji: EmojiModule
+    public val book: BookModule
+    public val cat: CatModule
+    public val superHero: SuperHeroModule
+    public val code: CodeModule
+    public val chuckNorris: ChuckNorrisModule
+    public val education: EducationModule
+    public val space: SpaceModule
+    public val yoda: YodaModule
+    public val music: MusicModule
+    public val file: FileModule
+    public val gameOfThrones: GameOfThronesModule
+    public val pokemon: PokemonModule
+    public val food: FoodModule
+    public val esports: EsportsModule
+    public val ancient: AncientModule
+    public val zelda: ZeldaModule
+    public val rockBand: RockBandModule
+    public val job: JobModule
 }
 
-internal class DefaultBlahBlah(
-    private val configuration: BlahBlahConfig
-) : BlahBlah {
 
-    override val address: AddressModule by lazy {
-        addressModule { configuration.yamlProvider }
-    }
-
-    override val animal: AnimalModule by lazy {
-        animalModule { configuration.yamlProvider }
-    }
-
-    override val app: AppModule by lazy {
-        appModule { configuration.yamlProvider }
-    }
-
-    override val university: UniversityModule by lazy {
-        universityModule { configuration.yamlProvider }
-    }
-
-    override val artist: ArtistModule by lazy {
-        artistModule { configuration.yamlProvider }
-    }
-
-    override val company: CompanyModule by lazy {
-        companyModule { configuration.yamlProvider }
-    }
-
-    override val compass: CompassModule by lazy {
-        compassModule { configuration.yamlProvider }
-    }
-
-    override val internet: InternetModule by lazy {
-        internetModule { configuration.yamlProvider }
-    }
-
-    override val lorem: LoremModule by lazy {
-        loremModule { configuration.yamlProvider }
-    }
-
-    override val hipster: HipsterModule by lazy {
-        hipsterModule { configuration.yamlProvider }
-    }
-
-    override val name: NameModule by lazy {
-        nameModule { configuration.yamlProvider }
-    }
-
-    override val creditCard: CreditCardModule by lazy {
-        creditCardModule { configuration.yamlProvider }
-    }
-
-    override val color: ColorModule by lazy {
-        colorModule { configuration.yamlProvider }
-    }
-
-    override val commerce: CommerceModule by lazy {
-        commerceModule { configuration.yamlProvider }
-    }
-}
-
-fun blahBlah(
-    newLocale: String = "en",
-    resourcePath: () -> String = { "src/commonTest/resources/en.yml" }
-): BlahBlah {
-    return DefaultBlahBlah(
-        configuration = configs {
-            locale = newLocale
-            path = resourcePath.invoke()
-        }
-    )
-}

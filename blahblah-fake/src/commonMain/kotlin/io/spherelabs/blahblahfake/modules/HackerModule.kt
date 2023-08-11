@@ -7,17 +7,17 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class HackerModule(
+public class HackerModule(
     private val provider: Provider
 ) {
-    val abbreviation: Abbreviation get() = Abbreviation(provider.get(HackerPath.Abbreviation))
-    val adjective: Adjective get() = Adjective(provider.get(HackerPath.Adjective))
-    val noun: Noun get() = Noun(provider.get(HackerPath.Noun))
-    val action: Action get() = Action(provider.get(HackerPath.Action))
+    public val abbreviation: Abbreviation get() = Abbreviation(provider.get(HackerPath.Abbreviation))
+    public val adjective: Adjective get() = Adjective(provider.get(HackerPath.Adjective))
+    public val noun: Noun get() = Noun(provider.get(HackerPath.Noun))
+    public val action: Action get() = Action(provider.get(HackerPath.Action))
 }
 
 @JvmInline
-value class Action(
+public value class Action(
     private val value: String
 ) {
     override fun toString(): String {

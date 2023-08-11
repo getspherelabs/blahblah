@@ -7,18 +7,18 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class GameOfThronesModule(
+public class GameOfThronesModule(
     private val provider: Provider
 ) {
-    val character: Character get() = Character(provider.get(GameOfThronesPath.Character))
-    val house: House get() = House(provider.get(GameOfThronesPath.House))
-    val quote: Quote get() = Quote(provider.get(GameOfThronesPath.Quote))
-    val city: City get() = City(provider.get(GameOfThronesPath.City))
-    val dragon: Dragon get() = Dragon(provider.get(GameOfThronesPath.Dragon))
+    public val character: Character get() = Character(provider.get(GameOfThronesPath.Character))
+    public val house: House get() = House(provider.get(GameOfThronesPath.House))
+    public val quote: Quote get() = Quote(provider.get(GameOfThronesPath.Quote))
+    public val city: City get() = City(provider.get(GameOfThronesPath.City))
+    public val dragon: Dragon get() = Dragon(provider.get(GameOfThronesPath.Dragon))
 }
 
 @JvmInline
-value class Character(
+public value class Character(
     private val value: String
 ) {
     override fun toString(): String {
@@ -27,7 +27,7 @@ value class Character(
 }
 
 @JvmInline
-value class House(
+public value class House(
     private val value: String
 ) {
     override fun toString(): String {
@@ -36,7 +36,7 @@ value class House(
 }
 
 @JvmInline
-value class Dragon(
+public value class Dragon(
     private val value: String
 ) {
     override fun toString(): String {

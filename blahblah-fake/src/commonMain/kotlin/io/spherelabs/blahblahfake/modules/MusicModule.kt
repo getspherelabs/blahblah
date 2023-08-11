@@ -7,14 +7,14 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class MusicModule(
+public class MusicModule(
     private val provider: Provider
 ) {
-    val instrument: Instrument get() = Instrument(provider.get(MusicPath.Instrument))
+    public val instrument: Instrument get() = Instrument(provider.get(MusicPath.Instrument))
 }
 
 @JvmInline
-value class Instrument(
+public value class Instrument(
     private val value: String
 ) {
     override fun toString(): String {

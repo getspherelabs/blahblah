@@ -7,14 +7,14 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class CodeModule(
+public class CodeModule(
     private val provider: Provider
 ) {
-    val asin: Asin get() = Asin(provider.get(CodePath.Asin))
+    public val asin: Asin get() = Asin(provider.get(CodePath.Asin))
 }
 
 @JvmInline
-value class Asin(
+public value class Asin(
     private val value: String
 ) {
     override fun toString(): String {

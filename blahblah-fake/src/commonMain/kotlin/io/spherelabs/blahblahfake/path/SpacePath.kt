@@ -1,6 +1,6 @@
 package io.spherelabs.blahblahfake.path
 
-enum class SpacePath (override val value: String): Path {
+internal enum class SpacePath (override val value: String): Path {
     Planet("space.planet"),
     Moon("space.moon"),
     Galaxy("space.galaxy"),

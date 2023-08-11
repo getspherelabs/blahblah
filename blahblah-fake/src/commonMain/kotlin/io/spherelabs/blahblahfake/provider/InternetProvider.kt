@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.InternetPath
 import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class InternetProvider(
+internal class InternetProvider(
     private val yamlProvider: YamlProvider
 ) : Provider {
 

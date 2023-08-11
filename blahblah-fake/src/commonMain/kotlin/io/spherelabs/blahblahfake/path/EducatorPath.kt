@@ -1,6 +1,6 @@
 package io.spherelabs.blahblahfake.path
 
-enum class EducatorPath(override val value: String) : Path {
+internal enum class EducatorPath(override val value: String) : Path {
     Name("educator.name"),
     Secondary("educator.secondary"),
     Type("educator.tertiary.type"),

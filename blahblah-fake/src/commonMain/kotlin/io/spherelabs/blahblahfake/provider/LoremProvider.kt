@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.LoremPath
 import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class LoremProvider(
+internal class LoremProvider(
     private val yamlProvider: YamlProvider
 ) : Provider {
 

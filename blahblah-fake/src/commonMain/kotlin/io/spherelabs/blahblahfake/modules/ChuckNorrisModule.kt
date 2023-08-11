@@ -7,14 +7,14 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class ChuckNorrisModule(
+public class ChuckNorrisModule(
     private val provider: Provider
 ) {
-    val fact: Fact get() = Fact(provider.get(ChuckNorrisPath.Fact))
+    public val fact: Fact get() = Fact(provider.get(ChuckNorrisPath.Fact))
 }
 
 @JvmInline
-value class Fact(
+public value class Fact(
     private val value: String
 ) {
     override fun toString(): String {

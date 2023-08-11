@@ -1,6 +1,6 @@
 package io.spherelabs.blahblahfake.provider
 
-enum class ProviderType {
+internal enum class ProviderType {
     Address,
     Animal,
     App,
@@ -14,5 +14,29 @@ enum class ProviderType {
     Name,
     CreditCard,
     Color,
-    Commerce
+    Commerce,
+    Team,
+    Hacker,
+    IdNumber,
+    Emoji,
+    Book,
+    Cat,
+    SuperHero,
+    Code,
+    ChuckNorris,
+    Educator,
+    Space,
+    Yoda,
+    Music,
+    File,
+    GameOfThrones,
+    Pokemon,
+    Food,
+    Esports,
+    Ancient,
+    TwinPeaks,
+    LordOfTheRings,
+    Zelda,
+    RockBand,
+    Job
 }

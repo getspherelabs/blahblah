@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.EmojiPath
 import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class EmojiProvider(
+internal class EmojiProvider(
     private val yamlProvider: YamlProvider
 ): Provider {
 

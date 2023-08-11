@@ -5,21 +5,21 @@ import io.spherelabs.blahblahyaml.provider.YamlProvider
 import io.spherelabs.blahblahyaml.provider.yamlProvider
 
 
-interface BlahBlahConfig {
-    val locale: String
-    val retryLimit: Int
-    val yamlProvider: YamlProvider
-    val path: String
+public interface BlahBlahConfig {
+    public val locale: String
+    public val retryLimit: Int
+    public val yamlProvider: YamlProvider
+    public val path: String
 
-    data class Builder(
-        var locale: String = "en",
-        var retryLimit: Int = 0,
-        var provider: YamlProvider? = null,
-        var path: String = ""
+    public data class Builder(
+        public var locale: String = "en",
+        public var retryLimit: Int = 0,
+        public var provider: YamlProvider? = null,
+        public var path: String = ""
     )
 }
 
-inline fun configs(builder: BlahBlahConfig.Builder.() -> Unit): BlahBlahConfig {
+public inline fun configs(builder: BlahBlahConfig.Builder.() -> Unit): BlahBlahConfig {
     val config = BlahBlahConfig.Builder().apply(builder)
 
     return object : BlahBlahConfig {

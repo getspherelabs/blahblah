@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.FilePath
 import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class FileProvider(
+internal class FileProvider(
     private val yamlProvider: YamlProvider
 ) : Provider {
 

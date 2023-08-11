@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.CommercePath
 import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class CommerceProvider(
+internal class CommerceProvider(
     private val yamlProvider: YamlProvider
 ) : Provider {
 

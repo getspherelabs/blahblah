@@ -1,17 +1,30 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
+    id("org.jetbrains.kotlinx.binary-compatibility-validator") version "0.13.2"
 }
 
 kotlin {
+    explicitApi()
     android {
         compilations.all {
             kotlinOptions {
                 jvmTarget = "1.8"
             }
         }
+        publishAllLibraryVariants()
     }
-    
+
+    targets.configureEach {
+        //add another test task with release binary
+        if (this is org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTargetWithTests<*>) {
+            binaries.test(listOf(org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.RELEASE))
+            testRuns.create("releaseTest") {
+                setExecutionSourceFrom(binaries.getTest(org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.RELEASE))
+            }
+        }
+    }
+
     listOf(
         iosX64(),
         iosArm64(),

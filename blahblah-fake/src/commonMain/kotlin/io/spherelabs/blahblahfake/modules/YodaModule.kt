@@ -7,14 +7,14 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class YodaModule(
+public class YodaModule(
     private val provider: Provider
 ) {
-    val quote: Quote get() = Quote(provider.get(YodaPath.Quote))
+    public val quote: Quote get() = Quote(provider.get(YodaPath.Quote))
 }
 
 @JvmInline
-value class Quote(
+public value class Quote(
     private val value: String
 ) {
     override fun toString(): String {

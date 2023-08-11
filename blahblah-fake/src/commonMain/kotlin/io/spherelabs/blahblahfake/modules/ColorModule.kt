@@ -4,16 +4,16 @@ import io.spherelabs.blahblahfake.path.ColorPath
 import io.spherelabs.blahblahfake.provider.Provider
 import kotlin.jvm.JvmInline
 
-class ColorModule(
+public class ColorModule(
     private val provider: Provider
 ) {
-    val name: Name get() = Name(provider.get(ColorPath.Name))
-    val safeColor: SafeColor get() = SafeColor(provider.get(ColorPath.SafeColor))
+    public val name: Name get() = Name(provider.get(ColorPath.Name))
+    public val safeColor: SafeColor get() = SafeColor(provider.get(ColorPath.SafeColor))
 }
 
 @JvmInline
-value class SafeColor(
-    val value: String
+public value class SafeColor(
+    private val value: String
 ) {
     override fun toString(): String {
         return value

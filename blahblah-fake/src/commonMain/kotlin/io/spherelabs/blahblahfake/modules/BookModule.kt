@@ -7,17 +7,17 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class BookModule(
+public class BookModule(
     private val provider: Provider
 ) {
-    val title: Title get() = Title(provider.get(BookPath.Title))
-    val author: Author get() = Author(provider.get(BookPath.Author))
-    val publisher: Publisher get() = Publisher(provider.get(BookPath.Publisher))
-    val genre: Genre get() = Genre(provider.get(BookPath.Genre))
+    public val title: Title get() = Title(provider.get(BookPath.Title))
+    public val author: Author get() = Author(provider.get(BookPath.Author))
+    public val publisher: Publisher get() = Publisher(provider.get(BookPath.Publisher))
+    public val genre: Genre get() = Genre(provider.get(BookPath.Genre))
 }
 
 @JvmInline
-value class Title(
+public value class Title(
     private val value: String
 ) {
     override fun toString(): String {
@@ -26,7 +26,7 @@ value class Title(
 }
 
 @JvmInline
-value class Publisher(
+public value class Publisher(
     private val value: String
 ) {
     override fun toString(): String {
@@ -35,7 +35,7 @@ value class Publisher(
 }
 
 @JvmInline
-value class Genre(
+public value class Genre(
     private val value: String
 ) {
     override fun toString(): String {

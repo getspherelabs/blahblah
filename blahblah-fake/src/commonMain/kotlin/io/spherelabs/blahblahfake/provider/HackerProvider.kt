@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.HackerPath
 import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class HackerProvider(
+internal class HackerProvider(
     private val yamlProvider: YamlProvider
 ) : Provider {
 

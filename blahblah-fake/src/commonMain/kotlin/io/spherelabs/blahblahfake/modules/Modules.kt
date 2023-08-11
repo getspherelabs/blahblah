@@ -102,3 +102,10 @@ internal fun commerceModule(yamlProvider: () -> YamlProvider): CommerceModule {
         yamlProvider(yamlProvider())
     })
 }
+
+internal fun teamModule(yamlProvider: () -> YamlProvider): TeamModule {
+    return TeamModule(provider = provider {
+        type(ProviderType.Team)
+        yamlProvider(yamlProvider())
+    })
+}

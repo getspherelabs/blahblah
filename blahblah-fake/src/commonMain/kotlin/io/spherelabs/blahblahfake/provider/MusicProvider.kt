@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.MusicPath
 import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class MusicProvider(
+internal class MusicProvider(
     private val yamlProvider: YamlProvider
 ) : Provider {
 

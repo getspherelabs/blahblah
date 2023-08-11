@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahfake.path.PokemonPath
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class PokemonProvider (
+internal class PokemonProvider (
     private val yamlProvider: YamlProvider
         ): Provider {
 

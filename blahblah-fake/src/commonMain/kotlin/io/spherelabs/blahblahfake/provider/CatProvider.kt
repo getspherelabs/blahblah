@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.CatPath
 import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class CatProvider(
+internal class CatProvider(
     private val yamlProvider: YamlProvider
 ) : Provider {
 

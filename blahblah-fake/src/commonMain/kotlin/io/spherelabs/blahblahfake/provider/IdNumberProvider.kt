@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.IdNumberPath
 import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class IdNumberProvider(
+internal class IdNumberProvider(
     private val yamlProvider: YamlProvider
 ): Provider {
 

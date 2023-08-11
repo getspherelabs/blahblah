@@ -6,10 +6,10 @@ import io.spherelabs.blahblahfake.provider.ProviderType
 import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class EmojiModule(
+public class EmojiModule(
     private val provider: Provider
 ) {
-    val name: Name get() = Name(provider.get(EmojiPath.Emoji))
+    public val name: Name get() = Name(provider.get(EmojiPath.Emoji))
 }
 
 

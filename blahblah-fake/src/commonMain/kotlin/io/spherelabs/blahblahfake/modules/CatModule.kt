@@ -7,16 +7,16 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class CatModule(
+public class CatModule(
     private val provider: Provider
 ) {
-    val name: Name get() = Name(provider.get(CatPath.Name))
-    val breed: Breed get() = Breed(provider.get(CatPath.Breed))
-    val registry: Registry get() = Registry(provider.get(CatPath.Registry))
+    public val name: Name get() = Name(provider.get(CatPath.Name))
+    public val breed: Breed get() = Breed(provider.get(CatPath.Breed))
+    public val registry: Registry get() = Registry(provider.get(CatPath.Registry))
 }
 
 @JvmInline
-value class Breed(
+public value class Breed(
     private val value: String
 ) {
     override fun toString(): String {
@@ -25,7 +25,7 @@ value class Breed(
 }
 
 @JvmInline
-value class Registry(
+public value class Registry(
     private val value: String
 ) {
     override fun toString(): String {

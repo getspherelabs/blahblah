@@ -6,7 +6,7 @@ import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahfake.path.UniversityPath
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-class UniversityProvider(
+internal class UniversityProvider(
     private val yamlProvider: YamlProvider
 ) : Provider {
 

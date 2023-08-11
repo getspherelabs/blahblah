@@ -7,15 +7,15 @@ import io.spherelabs.blahblahfake.provider.provider
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import kotlin.jvm.JvmInline
 
-class PokemonModule(
+public class PokemonModule(
     private val provider: Provider
 ) {
-    val name: Name get() = Name(provider.get(PokemonPath.Name))
-    val location: Location get() = Location(provider.get(PokemonPath.Location))
+    public val name: Name get() = Name(provider.get(PokemonPath.Name))
+    public val location: Location get() = Location(provider.get(PokemonPath.Location))
 }
 
 @JvmInline
-value class Location(
+public value class Location(
     private val value: String
 ) {
     override fun toString(): String {

@@ -4,16 +4,16 @@ import io.spherelabs.blahblahfake.path.TeamPath
 import io.spherelabs.blahblahfake.provider.Provider
 import kotlin.jvm.JvmInline
 
-class TeamModule(
+public class TeamModule(
     private val provider: Provider
 ) {
-    val creature: Creature get() = Creature(provider.get(TeamPath.Creature))
-    val name: Name get() = Name(provider.get(TeamPath.Name))
-    val sport: Sport get() = Sport(provider.get(TeamPath.Sport))
+    public val creature: Creature get() = Creature(provider.get(TeamPath.Creature))
+    public val name: Name get() = Name(provider.get(TeamPath.Name))
+    public val sport: Sport get() = Sport(provider.get(TeamPath.Sport))
 }
 
 @JvmInline
-value class Creature(
+public value class Creature(
     private val value: String
 ) {
     override fun toString(): String {
@@ -22,7 +22,7 @@ value class Creature(
 }
 
 @JvmInline
-value class Sport(
+public value class Sport(
     private val value: String
 ) {
     override fun toString(): String {

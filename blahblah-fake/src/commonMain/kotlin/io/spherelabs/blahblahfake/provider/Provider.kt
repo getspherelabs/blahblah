@@ -2,6 +2,6 @@ package io.spherelabs.blahblahfake.provider
 
 import io.spherelabs.blahblahfake.path.Path
 
-interface Provider {
-    fun get(path: Path): String
+public interface Provider {
+    public  fun get(path: Path): String
 }

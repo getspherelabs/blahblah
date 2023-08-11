@@ -4,16 +4,16 @@ import io.spherelabs.blahblahfake.path.AppPath
 import io.spherelabs.blahblahfake.provider.Provider
 import kotlin.jvm.JvmInline
 
-class AppModule(
+public class AppModule(
     private val provider: Provider
 ) {
-    val name: Name get() = Name(provider.get(AppPath.Name))
-    val author: Author get() = Author(provider.get(AppPath.Author))
-    val version: Version get() = Version(provider.get(AppPath.Version))
+    public val name: Name get() = Name(provider.get(AppPath.Name))
+    public val author: Author get() = Author(provider.get(AppPath.Author))
+    public val version: Version get() = Version(provider.get(AppPath.Version))
 }
 
 @JvmInline
-value class Version(
+public value class Version(
     private val value: String
 ) {
     override fun toString(): String {
@@ -22,7 +22,7 @@ value class Version(
 }
 
 @JvmInline
-value class Author(
+public value class Author(
     private val value: String
 ) {
     override fun toString(): String {

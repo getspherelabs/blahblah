@@ -4,10 +4,10 @@ import io.spherelabs.blahblahfake.path.UniversityPath
 import io.spherelabs.blahblahfake.provider.Provider
 
 
-class UniversityModule(
+public class UniversityModule(
     private val provider: Provider
 ) {
-    val name: Name get() =  Name(provider.get(UniversityPath.Name))
+    public val name: Name get() =  Name(provider.get(UniversityPath.Name))
 }
 
 
