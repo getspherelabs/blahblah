@@ -9,18 +9,38 @@ internal fun provider(block: ProviderBuilder.() -> Unit): Provider {
     return dsl.build()
 }
 
+/**
+ * [ProviderBuilder] for creating and configuring Provider instances using DSL-style configuration.
+ */
 internal class ProviderBuilder {
     private var providerType: ProviderType? = null
     private lateinit var yamlProvider: YamlProvider
 
+    /**
+     * Sets the provider type for the Provider instance.
+     *
+     * @param type The type of the provider.
+     */
     fun type(type: ProviderType) {
         providerType = type
     }
 
+    /**
+     * Sets the YAML provider for the Provider instance.
+     *
+     * @param provider The YAML provider to use.
+     */
     fun yamlProvider(provider: YamlProvider) {
         yamlProvider = provider
     }
 
+    /**
+     * [build] is a factory function that builds and returns a Provider instance
+     * based on the configured options.
+     *
+     * @return A configured Provider instance.
+     * @throws UninitializedProviderTypeException If the provider type is not initialized.
+     */
     fun build(): Provider {
         return when (providerType) {
             ProviderType.Address -> AddressProvider(yamlProvider)
@@ -43,7 +63,6 @@ internal class ProviderBuilder {
             ProviderType.Emoji -> EmojiProvider(yamlProvider)
             ProviderType.Book -> BookProvider(yamlProvider)
             ProviderType.Cat -> CatProvider(yamlProvider)
-            null -> throw UninitializedProviderTypeException()
             ProviderType.SuperHero -> SuperHeroProvider(yamlProvider)
             ProviderType.Code -> CodeProvider(yamlProvider)
             ProviderType.ChuckNorris -> ChuckNorrisProvider(yamlProvider)
@@ -62,6 +81,7 @@ internal class ProviderBuilder {
             ProviderType.Zelda -> ZeldaProvider(yamlProvider)
             ProviderType.RockBand -> RockBandProvider(yamlProvider)
             ProviderType.Job -> JobProvider(yamlProvider)
+            null -> throw UninitializedProviderTypeException()
         }
     }
 }

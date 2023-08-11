@@ -1,5 +1,5 @@
 import io.spherelabs.blahblahfake.internal.BlahBlah
-import io.spherelabs.blahblahfake.internal.blahBlah
+import io.spherelabs.blahblahfake.internal.blah
 import kotlin.test.*
 
 class ModuleTest {
@@ -8,7 +8,7 @@ class ModuleTest {
 
     @BeforeTest
     fun setup() {
-        blah = blahBlah()
+        blah = blah()
     }
 
     @Test

@@ -3,7 +3,9 @@ package io.spherelabs.blahblahfake.internal
 
 import io.spherelabs.blahblahfake.modules.*
 
-
+/**
+ * [BlahBlah] that provides access to various modules for generating different types of fake data.
+ */
 public interface BlahBlah {
     public val address: AddressModule
     public val app: AppModule
