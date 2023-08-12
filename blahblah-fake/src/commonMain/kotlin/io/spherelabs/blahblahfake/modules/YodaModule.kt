@@ -23,8 +23,10 @@ public value class Quote(
 }
 
 internal fun yodaModule(yamlProvider: () -> YamlProvider): YodaModule {
-    return YodaModule(provider = provider {
-        type(ProviderType.Yoda)
-        yamlProvider(yamlProvider())
-    })
+    return YodaModule(
+        provider = provider {
+            type(ProviderType.Yoda)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

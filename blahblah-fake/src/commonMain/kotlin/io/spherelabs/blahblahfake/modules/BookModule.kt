@@ -44,8 +44,10 @@ public value class Genre(
 }
 
 internal fun bookModule(yamlProvider: () -> YamlProvider): BookModule {
-    return BookModule(provider = provider {
-        type(ProviderType.Book)
-        yamlProvider(yamlProvider())
-    })
+    return BookModule(
+        provider = provider {
+            type(ProviderType.Book)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

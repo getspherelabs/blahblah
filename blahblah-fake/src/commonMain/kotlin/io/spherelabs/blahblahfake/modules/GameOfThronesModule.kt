@@ -45,8 +45,10 @@ public value class Dragon(
 }
 
 internal fun gameOfThronesModule(yamlProvider: () -> YamlProvider): GameOfThronesModule {
-    return GameOfThronesModule(provider = provider {
-        type(ProviderType.GameOfThrones)
-        yamlProvider(yamlProvider())
-    })
+    return GameOfThronesModule(
+        provider = provider {
+            type(ProviderType.GameOfThrones)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

@@ -4,7 +4,6 @@ import io.spherelabs.blahblahyaml.parser.yamlParser
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 import io.spherelabs.blahblahyaml.provider.yamlProvider
 
-
 /**
  * [BlahBlahConfig] defines configuration options for the BlahBlah instance.
  */

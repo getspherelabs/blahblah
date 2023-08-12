@@ -16,7 +16,6 @@ public class AddressModule(
     public val stateAbbreviation: StateAbbreviation get() = StateAbbreviation(provider.get(AddressPath.StateAbbreviation))
 }
 
-
 @JvmInline
 public value class City(
     private val value: String
@@ -44,7 +43,6 @@ public value class State(
     }
 }
 
-
 @JvmInline
 public value class StreetAddress(
     private val value: String
@@ -53,7 +51,7 @@ public value class StreetAddress(
         return value
     }
 
-    public  fun isDigit(): Boolean {
+    public fun isDigit(): Boolean {
         return value.any { it.isDigit() }
     }
 }
@@ -79,7 +77,6 @@ public value class BuildingNumber(
         return value
     }
 }
-
 
 @JvmInline
 public value class StateAbbreviation(

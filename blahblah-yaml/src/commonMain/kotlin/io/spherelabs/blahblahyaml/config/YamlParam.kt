@@ -1,6 +1,5 @@
 package io.spherelabs.blahblahyaml.config
 
-
 /**
  * [YamlParam] represents parameters used in YAML-related operations.
  *
@@ -15,4 +14,3 @@ internal data class YamlParam(
     var check: Boolean,
     var values: YamlResource
 )
-

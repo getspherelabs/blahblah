@@ -15,5 +15,3 @@ public interface YamlProvider {
      */
     public fun get(key: String): String
 }
-
-

@@ -19,10 +19,12 @@ public class EsportsModule(
 }
 
 internal fun esportsModule(yamlProvider: () -> YamlProvider): EsportsModule {
-    return EsportsModule(provider = provider {
-        type(ProviderType.Esports)
-        yamlProvider(yamlProvider())
-    })
+    return EsportsModule(
+        provider = provider {
+            type(ProviderType.Esports)
+            yamlProvider(yamlProvider())
+        }
+    )
 }
 
 @JvmInline

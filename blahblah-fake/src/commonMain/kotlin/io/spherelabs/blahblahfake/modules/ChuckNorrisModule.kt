@@ -23,8 +23,10 @@ public value class Fact(
 }
 
 internal fun chuckNorrisModule(yamlProvider: () -> YamlProvider): ChuckNorrisModule {
-    return ChuckNorrisModule(provider = provider {
-        type(ProviderType.ChuckNorris)
-        yamlProvider(yamlProvider())
-    })
+    return ChuckNorrisModule(
+        provider = provider {
+            type(ProviderType.ChuckNorris)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

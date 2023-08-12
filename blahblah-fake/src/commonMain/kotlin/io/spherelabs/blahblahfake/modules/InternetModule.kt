@@ -21,10 +21,9 @@ public value class FreeEmail(
     private val value: String
 ) {
     override fun toString(): String {
-       return value
+        return value
     }
 }
-
 
 @JvmInline
 public value class SafeEmail(
@@ -35,7 +34,6 @@ public value class SafeEmail(
     }
 }
 
-
 @JvmInline
 public value class DomainSuffix(
     private val value: String
@@ -44,7 +42,6 @@ public value class DomainSuffix(
         return value
     }
 }
-
 
 @JvmInline
 public value class Avatar(
@@ -147,4 +144,3 @@ public value class Mozilla(
         return value
     }
 }
-

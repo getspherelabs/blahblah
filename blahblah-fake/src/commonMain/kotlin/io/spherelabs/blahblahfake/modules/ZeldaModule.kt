@@ -14,8 +14,10 @@ public class ZeldaModule(
 }
 
 internal fun zeldaModule(yamlProvider: () -> YamlProvider): ZeldaModule {
-    return ZeldaModule(provider = provider {
-        type(ProviderType.Zelda)
-        yamlProvider(yamlProvider())
-    })
+    return ZeldaModule(
+        provider = provider {
+            type(ProviderType.Zelda)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

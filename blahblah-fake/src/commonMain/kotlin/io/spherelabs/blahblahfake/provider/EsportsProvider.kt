@@ -8,10 +8,10 @@ import io.spherelabs.blahblahyaml.provider.YamlProvider
 
 internal class EsportsProvider(
     private val yamlProvider: YamlProvider
-): Provider {
+) : Provider {
 
     override fun get(path: Path): String {
-        return when(path) {
+        return when (path) {
             is EsportsPath -> resolver { yamlProvider.get(path.value) }
             else -> throw UnsupportedPathException(path)
         }

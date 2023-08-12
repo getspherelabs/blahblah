@@ -38,7 +38,6 @@ public value class Self(
     }
 }
 
-
 @JvmInline
 public value class Material(
     private val value: String
@@ -64,7 +63,6 @@ public class PromotionCode(
     public val noun: Noun get() = Noun(provider.get(CommercePath.PromotionCodeNoun))
 }
 
-
 @JvmInline
 public value class Noun(
     private val value: String
@@ -73,6 +71,3 @@ public value class Noun(
         return value
     }
 }
-
-
-

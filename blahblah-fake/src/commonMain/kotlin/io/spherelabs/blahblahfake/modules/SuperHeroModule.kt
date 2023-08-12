@@ -12,10 +12,11 @@ public class SuperHeroModule(
     public val name: Name get() = Name(provider.get(SuperHeroPath.Name))
 }
 
-
 internal fun superHeroModule(yamlProvider: () -> YamlProvider): SuperHeroModule {
-    return SuperHeroModule(provider = provider {
-        type(ProviderType.SuperHero)
-        yamlProvider(yamlProvider())
-    })
+    return SuperHeroModule(
+        provider = provider {
+            type(ProviderType.SuperHero)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

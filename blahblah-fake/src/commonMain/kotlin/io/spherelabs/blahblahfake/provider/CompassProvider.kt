@@ -8,9 +8,9 @@ import io.spherelabs.blahblahyaml.provider.YamlProvider
 
 internal class CompassProvider(
     private val yamlProvider: YamlProvider
-): Provider {
+) : Provider {
     override fun get(path: Path): String {
-        return when(path) {
+        return when (path) {
             is CompassPath -> resolver { yamlProvider.get(path.value) }
             else -> throw UnsupportedPathException(path)
         }

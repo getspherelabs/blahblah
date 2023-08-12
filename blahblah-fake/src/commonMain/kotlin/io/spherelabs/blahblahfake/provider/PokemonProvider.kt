@@ -6,12 +6,12 @@ import io.spherelabs.blahblahfake.path.Path
 import io.spherelabs.blahblahfake.path.PokemonPath
 import io.spherelabs.blahblahyaml.provider.YamlProvider
 
-internal class PokemonProvider (
+internal class PokemonProvider(
     private val yamlProvider: YamlProvider
-        ): Provider {
+) : Provider {
 
     override fun get(path: Path): String {
-        return when(path) {
+        return when (path) {
             is PokemonPath -> resolver { yamlProvider.get(path.value) }
             else -> throw UnsupportedPathException(path)
         }

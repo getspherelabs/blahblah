@@ -17,10 +17,12 @@ public class JobModule(
 }
 
 internal fun jobModule(yamlProvider: () -> YamlProvider): JobModule {
-    return JobModule(provider = provider {
-        type(ProviderType.Job)
-        yamlProvider(yamlProvider())
-    })
+    return JobModule(
+        provider = provider {
+            type(ProviderType.Job)
+            yamlProvider(yamlProvider())
+        }
+    )
 }
 
 @JvmInline

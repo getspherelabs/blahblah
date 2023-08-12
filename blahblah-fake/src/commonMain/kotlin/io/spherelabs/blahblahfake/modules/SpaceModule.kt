@@ -78,8 +78,6 @@ public value class Cluster(
     }
 }
 
-
-
 @JvmInline
 public value class Constellation(
     private val value: String
@@ -90,7 +88,7 @@ public value class Constellation(
 }
 
 @JvmInline
-public value class Agency (
+public value class Agency(
     private val value: String
 ) {
     override fun toString(): String {
@@ -144,8 +142,10 @@ public value class Meteor(
 }
 
 internal fun spaceModule(yamlProvider: () -> YamlProvider): SpaceModule {
-    return SpaceModule(provider = provider {
-        type(ProviderType.Space)
-        yamlProvider(yamlProvider())
-    })
+    return SpaceModule(
+        provider = provider {
+            type(ProviderType.Space)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

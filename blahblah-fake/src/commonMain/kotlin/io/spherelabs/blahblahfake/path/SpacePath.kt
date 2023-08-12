@@ -3,7 +3,7 @@ package io.spherelabs.blahblahfake.path
 import io.spherelabs.blahblahfake.annotation.BlahBlahInternalApi
 
 @BlahBlahInternalApi
-internal enum class SpacePath (override val value: String): Path {
+internal enum class SpacePath(override val value: String) : Path {
     Planet("space.planet"),
     Moon("space.moon"),
     Galaxy("space.galaxy"),

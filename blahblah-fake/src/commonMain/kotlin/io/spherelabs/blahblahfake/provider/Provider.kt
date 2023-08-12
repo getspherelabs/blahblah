@@ -14,5 +14,5 @@ public interface Provider {
      * @param path The path from which content should be retrieved.
      * @return The retrieved content.
      */
-    public  fun get(path: Path): String
+    public fun get(path: Path): String
 }

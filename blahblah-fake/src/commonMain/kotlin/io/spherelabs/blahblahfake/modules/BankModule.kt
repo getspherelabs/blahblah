@@ -4,7 +4,4 @@ import io.spherelabs.blahblahfake.provider.Provider
 
 public class BankModule(
     private val provider: Provider
-) {
-
-
-}
+)

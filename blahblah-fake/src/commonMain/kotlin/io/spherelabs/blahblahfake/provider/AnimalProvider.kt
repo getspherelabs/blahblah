@@ -11,7 +11,7 @@ internal class AnimalProvider(
 ) : Provider {
 
     override fun get(path: Path): String {
-        return when(path) {
+        return when (path) {
             is AnimalPath -> resolver { yamlProvider.get(path.value) }
             else -> throw UnsupportedPathException(path)
         }

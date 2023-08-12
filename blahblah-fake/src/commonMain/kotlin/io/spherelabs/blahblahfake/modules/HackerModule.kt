@@ -26,8 +26,10 @@ public value class Action(
 }
 
 internal fun hackerModule(yamlProvider: () -> YamlProvider): HackerModule {
-    return HackerModule(provider = provider {
-        type(ProviderType.Hacker)
-        yamlProvider(yamlProvider())
-    })
+    return HackerModule(
+        provider = provider {
+            type(ProviderType.Hacker)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

@@ -74,7 +74,7 @@ internal class DefaultYamlProvider(
         var result: String
 
         if (separator != -1) {
-            dataCategory = key.substring(0, separator).toLowerCase()
+            dataCategory = key.substring(0, separator).lowercase()
             keyToFetch = key.substring(separator + 1, key.length)
             result = fetchSelectedValue(key, dataCategory, keyToFetch)
         } else {
@@ -97,7 +97,8 @@ internal class DefaultYamlProvider(
 
     private fun fetchNumerals(numeral: String): String {
         return matchAndReplace(
-            numeral, numeralOnlyRegEx
+            numeral,
+            numeralOnlyRegEx
         ) { random.nextInt(10).toString() }
     }
 
@@ -113,9 +114,10 @@ internal class DefaultYamlProvider(
         return matcher.replace(stringToMatch, transform)
     }
 
-
     private fun fetchCategory(
-        key: String, category: String, check: Boolean,
+        key: String,
+        category: String,
+        check: Boolean,
         valuesToFetch: LinkedHashMap<String, LinkedHashMap<String, String>>
     ): LinkedHashMap<*, *> {
         val (_, subCategory, _, values) = getCategoryAndValues(
@@ -146,17 +148,21 @@ internal class DefaultYamlProvider(
         }
 
         while (params.separator != -1) {
-            if (params.check && params.values[params.category.substring(
-                    0,
-                    params.separator
-                )] == null
+            if (params.check && params.values[
+                    params.category.substring(
+                        0,
+                        params.separator
+                    )
+                ] == null
             ) {
                 checkAndSetParams(key, baseParams, params)
             }
-            params.values = params.values[params.category.substring(
-                0,
-                params.separator
-            )] as LinkedHashMap<String, LinkedHashMap<String, String>>
+            params.values = params.values[
+                params.category.substring(
+                    0,
+                    params.separator
+                )
+            ] as LinkedHashMap<String, LinkedHashMap<String, String>>
             params.category =
                 params.category.substring(params.separator + 1, params.category.length)
             params.separator = params.category.indexOf(".")
@@ -179,6 +185,3 @@ internal class DefaultYamlProvider(
 
     private fun getResourceNotFound(key: String): String = "Resource not found $key"
 }
-
-
-

@@ -15,10 +15,12 @@ public class AncientModule(
 }
 
 internal fun ancientModule(yamlProvider: () -> YamlProvider): AncientModule {
-    return AncientModule(provider = provider {
-        type(ProviderType.Ancient)
-        yamlProvider(yamlProvider())
-    })
+    return AncientModule(
+        provider = provider {
+            type(ProviderType.Ancient)
+            yamlProvider(yamlProvider())
+        }
+    )
 }
 
 @JvmInline

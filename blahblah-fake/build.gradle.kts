@@ -16,7 +16,7 @@ kotlin {
     }
 
     targets.configureEach {
-        //add another test task with release binary
+        // add another test task with release binary
         if (this is org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTargetWithTests<*>) {
             binaries.test(listOf(org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.RELEASE))
             testRuns.create("releaseTest") {
@@ -39,7 +39,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("net.mamoe.yamlkt:yamlkt:0.12.0")
-                implementation( "com.benasher44:uuid:0.2.2")
+                api("com.benasher44:uuid:0.8.0")
                 implementation(project(":blahblah-yaml"))
             }
         }

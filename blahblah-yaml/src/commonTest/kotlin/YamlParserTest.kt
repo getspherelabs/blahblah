@@ -1,8 +1,10 @@
-import io.spherelabs.blahblahyaml.readPath
 import io.spherelabs.blahblahyaml.parser.yamlParser
+import io.spherelabs.blahblahyaml.readPath
 import okio.Path.Companion.toPath
-import kotlin.test.*
-
+import kotlin.test.Test
+import kotlin.test.assertEquals
+import kotlin.test.assertFailsWith
+import kotlin.test.assertNotNull
 
 class YamlParserTest {
 
@@ -29,7 +31,7 @@ class YamlParserTest {
     fun `check yaml parser if it does not exist`() {
         assertFailsWith(IllegalStateException::class, "Section key is not initialized") {
             val yamlParser = yamlParser {
-                resourcePath  {
+                resourcePath {
                     "src/commonTest/resources/test.yml"
                 }
             }

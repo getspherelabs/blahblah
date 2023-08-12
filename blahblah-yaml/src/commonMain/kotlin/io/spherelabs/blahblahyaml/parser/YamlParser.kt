@@ -13,4 +13,3 @@ public interface YamlParser {
      */
     public fun values(): YamlResource
 }
-

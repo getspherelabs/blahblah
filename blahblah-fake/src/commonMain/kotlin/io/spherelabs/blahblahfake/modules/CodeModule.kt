@@ -23,8 +23,10 @@ public value class Asin(
 }
 
 internal fun codeModule(yamlProvider: () -> YamlProvider): CodeModule {
-    return CodeModule(provider = provider {
-        type(ProviderType.Code)
-        yamlProvider(yamlProvider())
-    })
+    return CodeModule(
+        provider = provider {
+            type(ProviderType.Code)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

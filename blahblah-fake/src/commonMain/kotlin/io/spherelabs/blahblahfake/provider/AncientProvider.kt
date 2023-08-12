@@ -11,7 +11,7 @@ internal class AncientProvider(
 ) : Provider {
 
     override fun get(path: Path): String {
-        return when(path) {
+        return when (path) {
             is AncientPath -> resolver { yamlProvider.get(path.value) }
             else -> throw UnsupportedPathException(path)
         }

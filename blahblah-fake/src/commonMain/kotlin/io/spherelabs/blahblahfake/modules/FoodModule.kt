@@ -38,8 +38,10 @@ public value class Size(private val value: String) {
 }
 
 internal fun foodModule(yamlProvider: () -> YamlProvider): FoodModule {
-    return FoodModule(provider = provider {
-        type(ProviderType.Food)
-        yamlProvider(yamlProvider())
-    })
+    return FoodModule(
+        provider = provider {
+            type(ProviderType.Food)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

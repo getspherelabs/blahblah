@@ -13,8 +13,10 @@ public class RockBandModule(
 }
 
 internal fun rockBandModule(yamlProvider: () -> YamlProvider): RockBandModule {
-    return RockBandModule(provider = provider {
-        type(ProviderType.RockBand)
-        yamlProvider(yamlProvider())
-    })
+    return RockBandModule(
+        provider = provider {
+            type(ProviderType.RockBand)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

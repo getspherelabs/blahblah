@@ -8,7 +8,7 @@ import io.spherelabs.blahblahyaml.provider.YamlProvider
 
 internal class IdNumberProvider(
     private val yamlProvider: YamlProvider
-): Provider {
+) : Provider {
 
     override fun get(path: Path): String {
         return when (path) {

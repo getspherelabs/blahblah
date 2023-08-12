@@ -4,7 +4,6 @@ import io.spherelabs.blahblahyaml.annotation.YamlParserDsl
 import io.spherelabs.blahblahyaml.internal.DefaultYamlParser
 import net.mamoe.yamlkt.Yaml
 
-
 /**
  * [YamlParserBuilder] for creating instances of [YamlParser] with configurable options.
  *
@@ -23,7 +22,7 @@ public class YamlParserBuilder(private val yaml: Yaml) {
      *
      * @param path A function providing the resource path.
      */
-    public  fun resourcePath(path: () -> String) {
+    public fun resourcePath(path: () -> String) {
         resourcePath = path.invoke()
     }
 
@@ -45,7 +44,6 @@ public class YamlParserBuilder(private val yaml: Yaml) {
         }
     )
 }
-
 
 /**
  * [yamlParser] builder function creates a [YamlParser] instance using a DSL-style configuration.

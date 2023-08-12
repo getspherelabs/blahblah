@@ -12,10 +12,11 @@ public class EmojiModule(
     public val name: Name get() = Name(provider.get(EmojiPath.Emoji))
 }
 
-
 internal fun emojiModule(yamlProvider: () -> YamlProvider): EmojiModule {
-    return EmojiModule(provider = provider {
-        type(ProviderType.Emoji)
-        yamlProvider(yamlProvider())
-    })
+    return EmojiModule(
+        provider = provider {
+            type(ProviderType.Emoji)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

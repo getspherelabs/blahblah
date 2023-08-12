@@ -24,8 +24,10 @@ public value class Location(
 }
 
 internal fun pokemonModule(yamlProvider: () -> YamlProvider): PokemonModule {
-    return PokemonModule(provider = provider {
-        type(ProviderType.Pokemon)
-        yamlProvider(yamlProvider())
-    })
+    return PokemonModule(
+        provider = provider {
+            type(ProviderType.Pokemon)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

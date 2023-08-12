@@ -4,7 +4,6 @@ import io.spherelabs.blahblahyaml.annotation.YamlProviderDsl
 import io.spherelabs.blahblahyaml.internal.DefaultYamlProvider
 import io.spherelabs.blahblahyaml.parser.YamlParser
 
-
 /**
  * [YamlProviderBuilder] creates instances of [YamlProvider] with DSL-style configuration.
  */

@@ -32,10 +32,11 @@ public value class Invalid(
     }
 }
 
-
 internal fun idNumberModule(yamlProvider: () -> YamlProvider): IdNumberModule {
-    return IdNumberModule(provider = provider {
-        type(ProviderType.IdNumber)
-        yamlProvider(yamlProvider())
-    })
+    return IdNumberModule(
+        provider = provider {
+            type(ProviderType.IdNumber)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

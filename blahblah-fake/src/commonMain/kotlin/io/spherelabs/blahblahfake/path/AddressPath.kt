@@ -3,7 +3,7 @@ package io.spherelabs.blahblahfake.path
 import io.spherelabs.blahblahfake.annotation.BlahBlahInternalApi
 
 @BlahBlahInternalApi
-internal enum class AddressPath(override val value: String): Path {
+internal enum class AddressPath(override val value: String) : Path {
     Country("address.country"),
     State("address.state"),
     City("address.city"),

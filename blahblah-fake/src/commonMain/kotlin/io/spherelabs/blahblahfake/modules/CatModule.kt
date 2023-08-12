@@ -34,8 +34,10 @@ public value class Registry(
 }
 
 internal fun catModule(yamlProvider: () -> YamlProvider): CatModule {
-    return CatModule(provider = provider {
-        type(ProviderType.Cat)
-        yamlProvider(yamlProvider())
-    })
+    return CatModule(
+        provider = provider {
+            type(ProviderType.Cat)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

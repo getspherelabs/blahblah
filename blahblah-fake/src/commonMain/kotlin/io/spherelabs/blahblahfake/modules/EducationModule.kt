@@ -51,8 +51,10 @@ public value class Subject(
 }
 
 internal fun educationModule(yamlProvider: () -> YamlProvider): EducationModule {
-    return EducationModule(provider = provider {
-        type(ProviderType.Educator)
-        yamlProvider(yamlProvider())
-    })
+    return EducationModule(
+        provider = provider {
+            type(ProviderType.Educator)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

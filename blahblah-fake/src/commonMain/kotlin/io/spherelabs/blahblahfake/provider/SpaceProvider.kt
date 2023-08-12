@@ -11,7 +11,7 @@ internal class SpaceProvider(
 ) : Provider {
 
     override fun get(path: Path): String {
-        return when(path) {
+        return when (path) {
             is SpacePath -> resolver { yamlProvider.get(path.value) }
             else -> throw UnsupportedPathException(path)
         }

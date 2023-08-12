@@ -1,7 +1,7 @@
 object Version {
     const val okioVersion = "3.5.0"
     const val yamlVersion = "0.12.0"
-    const val ktlint = "10.3.0"
+    const val ktlint = "11.5.1"
 }
 
 object Deps {

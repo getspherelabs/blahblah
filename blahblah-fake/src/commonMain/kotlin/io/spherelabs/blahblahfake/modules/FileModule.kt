@@ -22,8 +22,10 @@ public value class Extension(private val value: String) {
 }
 
 internal fun fileModule(yamlProvider: () -> YamlProvider): FileModule {
-    return FileModule(provider = provider {
-        type(ProviderType.File)
-        yamlProvider(yamlProvider())
-    })
+    return FileModule(
+        provider = provider {
+            type(ProviderType.File)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

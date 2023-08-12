@@ -6,5 +6,5 @@ import io.spherelabs.blahblahfake.provider.Provider
 public class HipsterModule(
     private val provider: Provider
 ) {
-    public  val words: Words get() = Words(provider.get(HipsterPath.Words))
+    public val words: Words get() = Words(provider.get(HipsterPath.Words))
 }

@@ -22,8 +22,10 @@ public value class Instrument(
     }
 }
 internal fun musicModule(yamlProvider: () -> YamlProvider): MusicModule {
-    return MusicModule(provider = provider {
-        type(ProviderType.Music)
-        yamlProvider(yamlProvider())
-    })
+    return MusicModule(
+        provider = provider {
+            type(ProviderType.Music)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

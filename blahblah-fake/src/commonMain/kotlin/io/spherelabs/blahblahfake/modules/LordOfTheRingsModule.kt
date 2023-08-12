@@ -14,8 +14,10 @@ public class LordOfTheRingsModule(
 }
 
 internal fun lordOfTheRingsModule(yamlProvider: () -> YamlProvider): LordOfTheRingsModule {
-    return LordOfTheRingsModule(provider = provider {
-        type(ProviderType.LordOfTheRings)
-        yamlProvider(yamlProvider())
-    })
+    return LordOfTheRingsModule(
+        provider = provider {
+            type(ProviderType.LordOfTheRings)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

@@ -15,8 +15,10 @@ public class TwinPeaksModule(
 }
 
 internal fun twinPeaksModule(yamlProvider: () -> YamlProvider): TwinPeaksModule {
-    return TwinPeaksModule(provider = provider {
-        type(ProviderType.TwinPeaks)
-        yamlProvider(yamlProvider())
-    })
+    return TwinPeaksModule(
+        provider = provider {
+            type(ProviderType.TwinPeaks)
+            yamlProvider(yamlProvider())
+        }
+    )
 }

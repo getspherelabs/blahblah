@@ -1,7 +1,42 @@
 package io.spherelabs.blahblahfake.internal
 
-
-import io.spherelabs.blahblahfake.modules.*
+import io.spherelabs.blahblahfake.modules.AddressModule
+import io.spherelabs.blahblahfake.modules.AncientModule
+import io.spherelabs.blahblahfake.modules.AnimalModule
+import io.spherelabs.blahblahfake.modules.AppModule
+import io.spherelabs.blahblahfake.modules.ArtistModule
+import io.spherelabs.blahblahfake.modules.BookModule
+import io.spherelabs.blahblahfake.modules.CatModule
+import io.spherelabs.blahblahfake.modules.ChuckNorrisModule
+import io.spherelabs.blahblahfake.modules.CodeModule
+import io.spherelabs.blahblahfake.modules.ColorModule
+import io.spherelabs.blahblahfake.modules.CommerceModule
+import io.spherelabs.blahblahfake.modules.CompanyModule
+import io.spherelabs.blahblahfake.modules.CompassModule
+import io.spherelabs.blahblahfake.modules.CreditCardModule
+import io.spherelabs.blahblahfake.modules.EducationModule
+import io.spherelabs.blahblahfake.modules.EmojiModule
+import io.spherelabs.blahblahfake.modules.EsportsModule
+import io.spherelabs.blahblahfake.modules.FileModule
+import io.spherelabs.blahblahfake.modules.FoodModule
+import io.spherelabs.blahblahfake.modules.GameOfThronesModule
+import io.spherelabs.blahblahfake.modules.HackerModule
+import io.spherelabs.blahblahfake.modules.HipsterModule
+import io.spherelabs.blahblahfake.modules.IdNumberModule
+import io.spherelabs.blahblahfake.modules.InternetModule
+import io.spherelabs.blahblahfake.modules.JobModule
+import io.spherelabs.blahblahfake.modules.LoremModule
+import io.spherelabs.blahblahfake.modules.MusicModule
+import io.spherelabs.blahblahfake.modules.NameModule
+import io.spherelabs.blahblahfake.modules.PokemonModule
+import io.spherelabs.blahblahfake.modules.RockBandModule
+import io.spherelabs.blahblahfake.modules.SpaceModule
+import io.spherelabs.blahblahfake.modules.SuperHeroModule
+import io.spherelabs.blahblahfake.modules.TeamModule
+import io.spherelabs.blahblahfake.modules.UniversityModule
+import io.spherelabs.blahblahfake.modules.UuidModule
+import io.spherelabs.blahblahfake.modules.YodaModule
+import io.spherelabs.blahblahfake.modules.ZeldaModule
 
 /**
  * [BlahBlah] that provides access to various modules for generating different types of fake data.
@@ -46,4 +81,21 @@ public interface BlahBlah {
     public val uuid: UuidModule
 }
 
-
+/**
+ * [blah] is a builder function that creates an instance of [BlahBlah] with customizable configuration options.
+ *
+ * @param newLocale The new locale to use (default is "en").
+ * @param resourcePath A function providing the resource path (default is a test resource path).
+ * @return An instance of [BlahBlah] configured with the specified options.
+ */
+public fun blah(
+    newLocale: String = "en",
+    resourcePath: () -> String = { "src/commonTest/resources/en.yml" }
+): BlahBlah {
+    return DefaultBlahBlah(
+        configuration = configs {
+            locale = newLocale
+            path = resourcePath.invoke()
+        }
+    )
+}

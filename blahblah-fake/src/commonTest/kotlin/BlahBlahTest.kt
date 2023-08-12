@@ -1,6 +1,9 @@
 import io.spherelabs.blahblahfake.internal.BlahBlah
 import io.spherelabs.blahblahfake.internal.blah
-import kotlin.test.*
+import kotlin.test.BeforeTest
+import kotlin.test.Test
+import kotlin.test.assertNotNull
+import kotlin.test.assertTrue
 
 class BlahBlahTest {
 

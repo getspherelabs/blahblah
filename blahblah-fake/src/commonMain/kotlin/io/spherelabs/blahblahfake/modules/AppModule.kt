@@ -29,5 +29,3 @@ public value class Author(
         return value
     }
 }
-
-

@@ -11,7 +11,7 @@ internal class CompanyProvider(
 ) : Provider {
 
     override fun get(path: Path): String {
-        return when(path) {
+        return when (path) {
             is CompanyPath -> resolver { yamlProvider.get(path.value) }
             else -> throw UnsupportedPathException(path)
         }

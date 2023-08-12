@@ -12,4 +12,3 @@ import io.spherelabs.blahblahfake.annotation.BlahBlahInternalApi
 public inline fun resolver(crossinline action: () -> String): String {
     return action()
 }
-
