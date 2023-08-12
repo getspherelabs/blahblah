@@ -132,3 +132,7 @@ public interface Path {
 }
 
 ```
+
+## License
+
+[![License](https://img.shields.io/badge/License-MIT%202.0-blue.svg)](LICENSE.md)
