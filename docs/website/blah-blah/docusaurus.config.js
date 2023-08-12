@@ -30,7 +30,7 @@ module.exports = {
       style: 'light',
       links: [
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Meteor Multiplatform`,
+      copyright: `Copyright © ${new Date().getFullYear()} Blah-Blah (Kotlin-Multiplatform)`,
     },
     colorMode: {
       respectPrefersColorScheme: false,
