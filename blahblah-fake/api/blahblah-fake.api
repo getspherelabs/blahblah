@@ -83,7 +83,7 @@ public final class io/spherelabs/blahblahfake/internal/BlahBlahConfigKt {
 	public static final fun configs (Lkotlin/jvm/functions/Function1;)Lio/spherelabs/blahblahfake/internal/BlahBlahConfig;
 }
 
-public final class io/spherelabs/blahblahfake/internal/BlahBlahExtensionKt {
+public final class io/spherelabs/blahblahfake/internal/BlahBlahKt {
 	public static final fun blah (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Lio/spherelabs/blahblahfake/internal/BlahBlah;
 	public static synthetic fun blah$default (Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)Lio/spherelabs/blahblahfake/internal/BlahBlah;
 }
