@@ -27,7 +27,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   publish:
     needs: create-release
-    if: ${{ github.repository == 'getspherelabs/meteor' }}
+    if: ${{ github.repository == 'getspherelabs/blahblah' }}
     strategy:
       matrix:
         os: [ macos-11 ]
