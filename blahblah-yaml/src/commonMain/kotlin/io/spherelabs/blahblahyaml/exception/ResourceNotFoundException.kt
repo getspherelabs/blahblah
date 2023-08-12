@@ -5,4 +5,4 @@ package io.spherelabs.blahblahyaml.exception
  *
  * @param message A detailed error message explaining the reason for the exception.
  */
-class ResourceNotFoundException(message: String) : Exception(message)
+internal class ResourceNotFoundException(message: String) : Exception(message)

@@ -12,7 +12,7 @@ import platform.Foundation.create
  * @param path The path to the file to be read.
  * @return The content of the file as a string.
  */
-actual fun readPath(path: Path): String {
+internal actual fun readPath(path: Path): String {
     val manager = NSFileManager.defaultManager
 
     println(manager.currentDirectoryPath)

@@ -10,7 +10,7 @@ class YamlProviderTest {
     fun `check provider works properly`() {
         val provider = yamlProvider {
             yamlParser = yamlParser {
-                resourcePath = "src/commonTest/resources/en.yml"
+                resourcePath { "src/commonTest/resources/en.yml" }
                 sectionKey = "blah-blah"
             }
         }

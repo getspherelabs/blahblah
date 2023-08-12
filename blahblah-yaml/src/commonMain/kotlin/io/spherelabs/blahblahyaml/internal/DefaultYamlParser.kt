@@ -14,7 +14,7 @@ import okio.Path.Companion.toPath
  * @param path The file path to the YAML file to be parsed.
  * @param sectionKey The key representing the section within the YAML content.
  */
-class DefaultYamlParser(
+internal class DefaultYamlParser(
     private val yaml: Yaml,
     private val locale: String,
     private val path: String,

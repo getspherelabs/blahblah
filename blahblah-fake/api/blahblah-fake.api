@@ -1,0 +1,1589 @@
+public final class io/spherelabs/blahblahfake/BuildConfig {
+	public static final field BUILD_TYPE Ljava/lang/String;
+	public static final field DEBUG Z
+	public static final field LIBRARY_PACKAGE_NAME Ljava/lang/String;
+	public fun <init> ()V
+}
+
+public abstract interface annotation class io/spherelabs/blahblahfake/annotation/BlahBlahInternalApi : java/lang/annotation/Annotation {
+	public abstract fun message ()Ljava/lang/String;
+}
+
+public abstract interface class io/spherelabs/blahblahfake/internal/BlahBlah {
+	public abstract fun getAddress ()Lio/spherelabs/blahblahfake/modules/AddressModule;
+	public abstract fun getAncient ()Lio/spherelabs/blahblahfake/modules/AncientModule;
+	public abstract fun getAnimal ()Lio/spherelabs/blahblahfake/modules/AnimalModule;
+	public abstract fun getApp ()Lio/spherelabs/blahblahfake/modules/AppModule;
+	public abstract fun getArtist ()Lio/spherelabs/blahblahfake/modules/ArtistModule;
+	public abstract fun getBook ()Lio/spherelabs/blahblahfake/modules/BookModule;
+	public abstract fun getCat ()Lio/spherelabs/blahblahfake/modules/CatModule;
+	public abstract fun getChuckNorris ()Lio/spherelabs/blahblahfake/modules/ChuckNorrisModule;
+	public abstract fun getCode ()Lio/spherelabs/blahblahfake/modules/CodeModule;
+	public abstract fun getColor ()Lio/spherelabs/blahblahfake/modules/ColorModule;
+	public abstract fun getCommerce ()Lio/spherelabs/blahblahfake/modules/CommerceModule;
+	public abstract fun getCompany ()Lio/spherelabs/blahblahfake/modules/CompanyModule;
+	public abstract fun getCompass ()Lio/spherelabs/blahblahfake/modules/CompassModule;
+	public abstract fun getCreditCard ()Lio/spherelabs/blahblahfake/modules/CreditCardModule;
+	public abstract fun getEducation ()Lio/spherelabs/blahblahfake/modules/EducationModule;
+	public abstract fun getEmoji ()Lio/spherelabs/blahblahfake/modules/EmojiModule;
+	public abstract fun getEsports ()Lio/spherelabs/blahblahfake/modules/EsportsModule;
+	public abstract fun getFile ()Lio/spherelabs/blahblahfake/modules/FileModule;
+	public abstract fun getFood ()Lio/spherelabs/blahblahfake/modules/FoodModule;
+	public abstract fun getGameOfThrones ()Lio/spherelabs/blahblahfake/modules/GameOfThronesModule;
+	public abstract fun getHacker ()Lio/spherelabs/blahblahfake/modules/HackerModule;
+	public abstract fun getHipster ()Lio/spherelabs/blahblahfake/modules/HipsterModule;
+	public abstract fun getIdNumber ()Lio/spherelabs/blahblahfake/modules/IdNumberModule;
+	public abstract fun getInternet ()Lio/spherelabs/blahblahfake/modules/InternetModule;
+	public abstract fun getJob ()Lio/spherelabs/blahblahfake/modules/JobModule;
+	public abstract fun getLorem ()Lio/spherelabs/blahblahfake/modules/LoremModule;
+	public abstract fun getMusic ()Lio/spherelabs/blahblahfake/modules/MusicModule;
+	public abstract fun getName ()Lio/spherelabs/blahblahfake/modules/NameModule;
+	public abstract fun getPokemon ()Lio/spherelabs/blahblahfake/modules/PokemonModule;
+	public abstract fun getRockBand ()Lio/spherelabs/blahblahfake/modules/RockBandModule;
+	public abstract fun getSpace ()Lio/spherelabs/blahblahfake/modules/SpaceModule;
+	public abstract fun getSuperHero ()Lio/spherelabs/blahblahfake/modules/SuperHeroModule;
+	public abstract fun getTeam ()Lio/spherelabs/blahblahfake/modules/TeamModule;
+	public abstract fun getUniversity ()Lio/spherelabs/blahblahfake/modules/UniversityModule;
+	public abstract fun getUuid ()Lio/spherelabs/blahblahfake/modules/UuidModule;
+	public abstract fun getYoda ()Lio/spherelabs/blahblahfake/modules/YodaModule;
+	public abstract fun getZelda ()Lio/spherelabs/blahblahfake/modules/ZeldaModule;
+}
+
+public abstract interface class io/spherelabs/blahblahfake/internal/BlahBlahConfig {
+	public abstract fun getLocale ()Ljava/lang/String;
+	public abstract fun getPath ()Ljava/lang/String;
+	public abstract fun getRetryLimit ()I
+	public abstract fun getYamlProvider ()Lio/spherelabs/blahblahyaml/provider/YamlProvider;
+}
+
+public final class io/spherelabs/blahblahfake/internal/BlahBlahConfig$Builder {
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;ILio/spherelabs/blahblahyaml/provider/YamlProvider;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;ILio/spherelabs/blahblahyaml/provider/YamlProvider;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()I
+	public final fun component3 ()Lio/spherelabs/blahblahyaml/provider/YamlProvider;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;ILio/spherelabs/blahblahyaml/provider/YamlProvider;Ljava/lang/String;)Lio/spherelabs/blahblahfake/internal/BlahBlahConfig$Builder;
+	public static synthetic fun copy$default (Lio/spherelabs/blahblahfake/internal/BlahBlahConfig$Builder;Ljava/lang/String;ILio/spherelabs/blahblahyaml/provider/YamlProvider;Ljava/lang/String;ILjava/lang/Object;)Lio/spherelabs/blahblahfake/internal/BlahBlahConfig$Builder;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getLocale ()Ljava/lang/String;
+	public final fun getPath ()Ljava/lang/String;
+	public final fun getProvider ()Lio/spherelabs/blahblahyaml/provider/YamlProvider;
+	public final fun getRetryLimit ()I
+	public fun hashCode ()I
+	public final fun setLocale (Ljava/lang/String;)V
+	public final fun setPath (Ljava/lang/String;)V
+	public final fun setProvider (Lio/spherelabs/blahblahyaml/provider/YamlProvider;)V
+	public final fun setRetryLimit (I)V
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/internal/BlahBlahConfigKt {
+	public static final fun configs (Lkotlin/jvm/functions/Function1;)Lio/spherelabs/blahblahfake/internal/BlahBlahConfig;
+}
+
+public final class io/spherelabs/blahblahfake/internal/BlahBlahExtensionKt {
+	public static final fun blah (Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Lio/spherelabs/blahblahfake/internal/BlahBlah;
+	public static synthetic fun blah$default (Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)Lio/spherelabs/blahblahfake/internal/BlahBlah;
+}
+
+public final class io/spherelabs/blahblahfake/internal/ResolverKt {
+	public static final fun resolver (Lkotlin/jvm/functions/Function0;)Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Abbreviation {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Abbreviation;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Action {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Action;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/AddressModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getBuildingNumber-tEOBiZQ ()Ljava/lang/String;
+	public final fun getCity-Y1VsW20 ()Ljava/lang/String;
+	public final fun getCountry-fwuvz_o ()Ljava/lang/String;
+	public final fun getState-2TnVeQE ()Ljava/lang/String;
+	public final fun getStateAbbreviation-qWterfg ()Ljava/lang/String;
+	public final fun getStreetAddress-l62qKiQ ()Ljava/lang/String;
+	public final fun getZipCode-Ha3FWuc ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Adjective {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Adjective;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Agency {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Agency;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/AgencyAbr {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/AgencyAbr;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/AncientModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getHero-yeuXXHs ()Ljava/lang/String;
+	public final fun getTitan-je7vLh0 ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/AnimalModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Aol {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Aol;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/AppModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getAuthor-Gj_4kNo ()Ljava/lang/String;
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+	public final fun getVersion-n6w_RwQ ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/ArtistModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Asin {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Asin;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Author {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Author;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Avatar {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Avatar;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Azimuth {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Azimuth;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/BankModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+}
+
+public final class io/spherelabs/blahblahfake/modules/BookModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getAuthor-Gj_4kNo ()Ljava/lang/String;
+	public final fun getGenre-xeLM568 ()Ljava/lang/String;
+	public final fun getPublisher-GM6147Y ()Ljava/lang/String;
+	public final fun getTitle-MXVjGHM ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Breed {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Breed;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Bs {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Bs;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/BuildingNumber {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/BuildingNumber;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Buzzwords {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Buzzwords;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/CatModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getBreed-ncjDorE ()Ljava/lang/String;
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+	public final fun getRegistry-cGo1zo0 ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Character {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Character;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Chrome {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Chrome;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/ChuckNorrisModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getFact-RcOjTbk ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/City {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/City;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Cluster {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Cluster;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/CodeModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getAsin-0UQlyQo ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/ColorModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+	public final fun getSafeColor-67KkG04 ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/CommerceModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getDepartment-vvY3IiU ()Ljava/lang/String;
+	public final fun getProduct ()Lio/spherelabs/blahblahfake/modules/Product;
+	public final fun getPromotionCode ()Lio/spherelabs/blahblahfake/modules/PromotionCode;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Company {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Company;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/CompanyModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getBs-xH8SPlI ()Ljava/lang/String;
+	public final fun getBuzzwords-GTWyse4 ()Ljava/lang/String;
+	public final fun getIndustry-61viYBM ()Ljava/lang/String;
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+	public final fun getProfession-4NJxm3M ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/CompassModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getAbbreviation-nxcOjDo ()Ljava/lang/String;
+	public final fun getAzimuth-30km9dc ()Ljava/lang/String;
+	public final fun getDirection-_K6dfnI ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Constellation {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Constellation;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Country {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Country;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/CourseModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getSubject-atPsmy8 ()Ljava/lang/String;
+	public final fun getType-br9YgLI ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Creature {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Creature;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/CreditCardModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getExpiryDates-KKt5jdA ()Ljava/lang/String;
+	public final fun getNumbers-V58UPaU ()Ljava/lang/String;
+	public final fun getTypes-SThGRcY ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Department {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Department;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Direction {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Direction;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/DomainSuffix {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/DomainSuffix;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Dragon {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Dragon;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/EducationModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getCourse ()Lio/spherelabs/blahblahfake/modules/CourseModule;
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+	public final fun getSecondary-KJYcp6E ()Ljava/lang/String;
+	public final fun getType-br9YgLI ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/EmojiModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/EsportsModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getEvent-bYDrptY ()Ljava/lang/String;
+	public final fun getGame-XLjDlDo ()Ljava/lang/String;
+	public final fun getLeague-HCXaPLI ()Ljava/lang/String;
+	public final fun getPlayer-qpXgqic ()Ljava/lang/String;
+	public final fun getTeam-cbMaPpY ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Event {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Event;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/ExpiryDates {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/ExpiryDates;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Extension {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Extension;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Fact {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Fact;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Field {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Field;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/FileModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getExtension-tZRjwtw ()Ljava/lang/String;
+	public final fun getType-br9YgLI ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/FoodModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getIngredient--4aBtSg ()Ljava/lang/String;
+	public final fun getMeasurement-Q9rl0d0 ()Ljava/lang/String;
+	public final fun getSize-m4EApH0 ()Ljava/lang/String;
+	public final fun getSpice-tQT4-7Y ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/FreeEmail {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/FreeEmail;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Galaxy {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Galaxy;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Game {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Game;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/GameOfThronesModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getCharacter-2XoqAsA ()Ljava/lang/String;
+	public final fun getCity-Y1VsW20 ()Ljava/lang/String;
+	public final fun getDragon-IK-rtsM ()Ljava/lang/String;
+	public final fun getHouse-9mLJhjo ()Ljava/lang/String;
+	public final fun getQuote-mo7L-jQ ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Genre {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Genre;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/HackerModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getAbbreviation-nxcOjDo ()Ljava/lang/String;
+	public final fun getAction-8hzvces ()Ljava/lang/String;
+	public final fun getAdjective-avpkUnA ()Ljava/lang/String;
+	public final fun getNoun-34MW9sA ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Hero {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Hero;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/HipsterModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getWords-zK-yxFo ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/House {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/House;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/IdNumberModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getInvalid-NH1U18Y ()Ljava/lang/String;
+	public final fun getValid-h-5tp3c ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/ImageCategory {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/ImageCategory;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/ImageDimension {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/ImageDimension;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Industry {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Industry;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Ingredient {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Ingredient;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Instrument {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Instrument;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/InternetExplorer {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/InternetExplorer;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/InternetModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getAvatar-5a7mj5A ()Ljava/lang/String;
+	public final fun getDomainSuffix-cFs7HJw ()Ljava/lang/String;
+	public final fun getFreeEmail-7EF9w0k ()Ljava/lang/String;
+	public final fun getImageCategory-BOImxQU ()Ljava/lang/String;
+	public final fun getImageDimension-CRpjD2w ()Ljava/lang/String;
+	public final fun getSafeEmail-uJJkA_0 ()Ljava/lang/String;
+	public final fun getUserAgent ()Lio/spherelabs/blahblahfake/modules/UserAgent;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Invalid {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Invalid;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/JobModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getField-wkUDKU0 ()Ljava/lang/String;
+	public final fun getPosition-ZeGG7AM ()Ljava/lang/String;
+	public final fun getSkill-kD4XGkg ()Ljava/lang/String;
+	public final fun getTitle-MXVjGHM ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/League {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/League;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Location {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Location;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/LordOfTheRingsModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getCharacter-2XoqAsA ()Ljava/lang/String;
+	public final fun getLocation-QezqNPM ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/LoremModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getSupplemental-SY9J2IQ ()Ljava/lang/String;
+	public final fun getWords-zK-yxFo ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Material {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Material;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Measurement {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Measurement;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Meteor {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Meteor;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/MiddleName {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/MiddleName;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Moon {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Moon;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Mozilla {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Mozilla;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/MusicModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getInstrument-4gTCCx0 ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Name {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Name;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/NameModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getMiddleName-3BwsZyA ()Ljava/lang/String;
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Nebula {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Nebula;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Netscape {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Netscape;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Noun {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Noun;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Numbers {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Numbers;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Opera {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Opera;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Planet {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Planet;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Player {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Player;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/PokemonModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getLocation-QezqNPM ()Ljava/lang/String;
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Position {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Position;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Product {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getAdjective-avpkUnA ()Ljava/lang/String;
+	public final fun getMaterial-FyNYJGU ()Ljava/lang/String;
+	public final fun getSelf-PpgsWPU ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Profession {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Profession;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/PromotionCode {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getAdjective-avpkUnA ()Ljava/lang/String;
+	public final fun getNoun-34MW9sA ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Publisher {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Publisher;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Quote {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Quote;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Registry {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Registry;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/RockBandModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Safari {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Safari;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/SafeColor {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/SafeColor;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/SafeEmail {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/SafeEmail;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Secondary {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Secondary;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Self {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Self;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Size {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Size;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Skill {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Skill;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/SpaceCraft {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/SpaceCraft;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/SpaceModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getAgency-L0pnSNM ()Ljava/lang/String;
+	public final fun getAgencyAbr-pa5pL14 ()Ljava/lang/String;
+	public final fun getCluster-d4hkN3Y ()Ljava/lang/String;
+	public final fun getCompany--AVBBNg ()Ljava/lang/String;
+	public final fun getConstellation-d55G53k ()Ljava/lang/String;
+	public final fun getGalaxy-BTcaDtI ()Ljava/lang/String;
+	public final fun getMeasurement-Q9rl0d0 ()Ljava/lang/String;
+	public final fun getMeteor-Tigh3p8 ()Ljava/lang/String;
+	public final fun getMoon-P0P4-UQ ()Ljava/lang/String;
+	public final fun getNebula-OFHExe8 ()Ljava/lang/String;
+	public final fun getPlanet-iyDATdg ()Ljava/lang/String;
+	public final fun getStar-mbgaDt8 ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Spice {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Spice;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Sport {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Sport;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Star {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Star;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/State {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/State;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/StateAbbreviation {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/StateAbbreviation;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/StreetAddress {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/StreetAddress;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public static final fun isDigit-impl (Ljava/lang/String;)Z
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Subject {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Subject;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/SuperHeroModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Supplemental {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Supplemental;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Team {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Team;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/TeamModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getCreature-i_ZZarw ()Ljava/lang/String;
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+	public final fun getSport-2il6XBk ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Titan {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Titan;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Title {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Title;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/TwinPeaksModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getCharacter-2XoqAsA ()Ljava/lang/String;
+	public final fun getLocation-QezqNPM ()Ljava/lang/String;
+	public final fun getQuote-mo7L-jQ ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Type {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Type;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Types {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Types;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/UUID {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/UUID;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/UniversityModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getName-Bk07lUA ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/UserAgent {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getAol-LjL2BfQ ()Ljava/lang/String;
+	public final fun getChrome-LUK7aog ()Ljava/lang/String;
+	public final fun getInternetExplorer-o0bbBMQ ()Ljava/lang/String;
+	public final fun getMozilla-SCpupkU ()Ljava/lang/String;
+	public final fun getNetscape-yN4D9aU ()Ljava/lang/String;
+	public final fun getOpera-X8Tq8LQ ()Ljava/lang/String;
+	public final fun getSafari-7wiimTI ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/UuidModule {
+	public fun <init> ()V
+	public final fun getUuid-ciUvSiI ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Valid {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Valid;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Version {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Version;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/Words {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/Words;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/YodaModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getQuote-mo7L-jQ ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/ZeldaModule {
+	public fun <init> (Lio/spherelabs/blahblahfake/provider/Provider;)V
+	public final fun getCharacter-2XoqAsA ()Ljava/lang/String;
+	public final fun getGame-XLjDlDo ()Ljava/lang/String;
+}
+
+public final class io/spherelabs/blahblahfake/modules/ZipCode {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lio/spherelabs/blahblahfake/modules/ZipCode;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public static final fun isDigit-impl (Ljava/lang/String;)Z
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public abstract interface class io/spherelabs/blahblahfake/path/Path {
+	public abstract fun getValue ()Ljava/lang/String;
+}
+
+public abstract interface class io/spherelabs/blahblahfake/provider/Provider {
+	public abstract fun get (Lio/spherelabs/blahblahfake/path/Path;)Ljava/lang/String;
+}
+

@@ -9,7 +9,7 @@ package io.spherelabs.blahblahyaml.config
  * @property check Indicates whether to perform a resource check.
  * @property values The values associated with the YAML resource.
  */
-data class YamlParam(
+internal data class YamlParam(
     var separator: Int,
     var category: String,
     var check: Boolean,

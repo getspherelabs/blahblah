@@ -12,17 +12,18 @@ import net.mamoe.yamlkt.Yaml
  * @property locale The desired locale for extracting values from the YAML content.
  */
 @YamlParserDsl
-class YamlParserBuilder(private val yaml: Yaml) {
-    var locale: String = "en"
+public class YamlParserBuilder(private val yaml: Yaml) {
     private var resourcePath: String? = null
-    var sectionKey: String? = null
+
+    public var locale: String = "en"
+    public var sectionKey: String? = null
 
     /**
      * Sets the resource path for the YAML file.
      *
      * @param path A function providing the resource path.
      */
-    fun resourcePath(path: () -> String) {
+    public  fun resourcePath(path: () -> String) {
         resourcePath = path.invoke()
     }
 
@@ -33,7 +34,7 @@ class YamlParserBuilder(private val yaml: Yaml) {
      * @return A configured instance of [YamlParser].
      * @throws IllegalStateException if the resource path or section key is not initialized.
      */
-    fun build(): YamlParser = DefaultYamlParser(
+    public fun build(): YamlParser = DefaultYamlParser(
         yaml = yaml,
         locale = locale,
         path = checkNotNull(resourcePath) {
@@ -53,7 +54,7 @@ class YamlParserBuilder(private val yaml: Yaml) {
  * @param parserBuilder DSL block for configuring the [YamlParserBuilder].
  * @return A configured instance of [YamlParser].
  */
-inline fun yamlParser(
+public inline fun yamlParser(
     yaml: Yaml = Yaml(),
     parserBuilder: YamlParserBuilder.() -> Unit
 ): YamlParser {

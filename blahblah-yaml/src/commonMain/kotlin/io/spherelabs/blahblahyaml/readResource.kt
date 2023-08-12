@@ -8,4 +8,4 @@ import okio.Path
  * @param path The path to the file to be read.
  * @return The content of the file as a string.
  */
-expect fun readPath(path: Path): String
+internal expect fun readPath(path: Path): String

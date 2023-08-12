@@ -9,10 +9,10 @@ import io.spherelabs.blahblahyaml.parser.YamlParser
  * [YamlProviderBuilder] creates instances of [YamlProvider] with DSL-style configuration.
  */
 @YamlProviderDsl
-class YamlProviderBuilder {
-    var yamlParser: YamlParser? = null
+public class YamlProviderBuilder {
+    public var yamlParser: YamlParser? = null
 
-    fun build(): YamlProvider = DefaultYamlProvider(
+    public fun build(): YamlProvider = DefaultYamlProvider(
         yamlParser = checkNotNull(yamlParser) {
             "Yaml parser is not initialized"
         }
@@ -26,7 +26,7 @@ class YamlProviderBuilder {
  * @return A configured instance of [YamlProvider].
  */
 
-inline fun yamlProvider(providerBuilder: YamlProviderBuilder.() -> Unit): YamlProvider {
+public inline fun yamlProvider(providerBuilder: YamlProviderBuilder.() -> Unit): YamlProvider {
     val builder = YamlProviderBuilder()
     builder.providerBuilder()
     return builder.build()

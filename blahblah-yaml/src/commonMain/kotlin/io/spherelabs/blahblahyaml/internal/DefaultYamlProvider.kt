@@ -12,7 +12,7 @@ import kotlin.random.Random
  * @param yamlParser The YamlParser instance used for fetching YAML resources.
  * @param random The random number generator (optional, uses default if not provided).
  */
-class DefaultYamlProvider(
+internal class DefaultYamlProvider(
     private val yamlParser: YamlParser,
     private val random: Random = Random.Default
 ) : YamlProvider {

@@ -10,7 +10,7 @@ import okio.buffer
  * @param path The path to the file to be read.
  * @return The content of the file as a string.
  */
-actual fun readPath(path: Path): String {
+internal actual fun readPath(path: Path): String {
     val builder = StringBuilder()
     FileSystem.SYSTEM.source(path).use { fs ->
         fs.buffer().use { bfs ->

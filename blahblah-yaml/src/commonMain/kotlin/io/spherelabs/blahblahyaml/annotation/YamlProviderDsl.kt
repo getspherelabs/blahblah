@@ -5,4 +5,4 @@ package io.spherelabs.blahblahyaml.annotation
  * YAML providers with a DSL-style configuration.
  */
 @DslMarker
-annotation class YamlProviderDsl
+internal annotation class YamlProviderDsl
