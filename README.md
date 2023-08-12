@@ -25,7 +25,7 @@ Blah-Blah's flexibility and compatibility with Kotlin Multiplatform make it an e
 - [Core Concepts](https://getspherelabs.github.io/blahblah/guides/concepts)
 - [Contributing](https://getspherelabs.github.io/blahblah/contribute/)
 
-## Library Flowcharts
+## Architecture
 
 ```mermaid
 flowchart LR
@@ -34,6 +34,39 @@ flowchart LR
     F --> A[Module]
     A[Module] --> B[(BlahBlah)]
 ```
+
+## Modules
+
+- [Address](https://github.com/getspherelabs/blahblah/)
+- [Ancient](https://github.com/getspherelabs/blahblah/)
+- [Animal](https://github.com/getspherelabs/blahblah/)
+- [App](https://github.com/getspherelabs/blahblah/)
+- [Artist](https://github.com/getspherelabs/blahblah/)
+- [Bank](https://github.com/getspherelabs/blahblah/)
+- [Book](https://github.com/getspherelabs/blahblah/)
+- [Cat](https://github.com/getspherelabs/blahblah/)
+- [Code](https://github.com/getspherelabs/blahblah/)
+- [Color](https://github.com/getspherelabs/blahblah/)
+- [Commerce](https://github.com/getspherelabs/blahblah/)
+- [Company](https://github.com/getspherelabs/blahblah/)
+- [CreditCard](https://github.com/getspherelabs/blahblah/)
+- [Compass](https://github.com/getspherelabs/blahblah/)
+- [Education](https://github.com/getspherelabs/blahblah/)
+- [Esports](https://github.com/getspherelabs/blahblah/)
+- [File](https://github.com/getspherelabs/blahblah/)
+- [Food](https://github.com/getspherelabs/blahblah/)
+- [Hacker](https://github.com/getspherelabs/blahblah/)
+- [IdNumber(https://github.com/getspherelabs/blahblah/)
+- [Internet](https://github.com/getspherelabs/blahblah/)
+- [Job](https://github.com/getspherelabs/blahblah/)
+- [Lorem](https://github.com/getspherelabs/blahblah/)
+- [Music](https://github.com/getspherelabs/blahblah/)
+- [Name](https://github.com/getspherelabs/blahblah/)
+- [Space](https://github.com/getspherelabs/blahblah/)
+- [Uuid](https://github.com/getspherelabs/blahblah/)
+- [University](https://github.com/getspherelabs/blahblah/)
+- [Team](https://github.com/getspherelabs/blahblah/)
+
 
 ## Setup
 
@@ -46,8 +79,6 @@ Add the dependency below into your module's `build.gradle.kts` file:
 implementation("io.github.behzodhalil:blahblah-fake:<latest-version>")
 // If only need yaml parser
 implementation("io.github.behzodhalil:blahblah-yaml:<latest-version>")
-// If only need random
-implementation("io.github.behzodhalil:blahblah-random:<latest-version>")
 
 // For testing
 
@@ -55,8 +86,6 @@ implementation("io.github.behzodhalil:blahblah-random:<latest-version>")
 testImplementation("io.github.behzodhalil:blahblah-fake:<latest-version>")
 // If only need yaml parser
 testImplementation("io.github.behzodhalil:blahblah-yaml:<latest-version>")
-// If only need random
-testImplementation("io.github.behzodhalil:blahblah-random:<latest-version>")
 
 ```
 ## Usage
