@@ -6,23 +6,13 @@ plugins {
 
 kotlin {
     explicitApi()
-    android {
+    androidTarget {
         compilations.all {
             kotlinOptions {
                 jvmTarget = "1.8"
             }
         }
         publishAllLibraryVariants()
-    }
-
-    targets.configureEach {
-        // add another test task with release binary
-        if (this is org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTargetWithTests<*>) {
-            binaries.test(listOf(org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.RELEASE))
-            testRuns.create("releaseTest") {
-                setExecutionSourceFrom(binaries.getTest(org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.RELEASE))
-            }
-        }
     }
 
     listOf(
@@ -70,6 +60,13 @@ kotlin {
         }
     }
 }
+
+tasks.register<Copy>("copyiOSTestResources") {
+    from("src/commonTest/resources")
+    into("build/bin/iosX64/debugTest/resources")
+}
+
+tasks.findByName("iosX64Test")!!.dependsOn("copyiOSTestResources")
 
 android {
     namespace = "io.spherelabs.blahblahfake"

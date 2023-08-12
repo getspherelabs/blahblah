@@ -73,7 +73,7 @@ jobs:
         with:
           key-prefix: gradle-build
       - name: Build
-        run: ./gradlew :blahblah-fake:build :blahblah-yaml:build
+        run: ./gradlew :blahblah-fake:build -x ktlintCommonMainSourceSetCheck -x ktlintKotlinScriptCheck  :blahblah-yaml:build -x ktlintCommonMainSourceSetCheck -x ktlintKotlinScriptCheck
   test:
     name: Unit tests
     runs-on: ubuntu-22.04

@@ -13,35 +13,6 @@ import platform.Foundation.NSString
 import platform.Foundation.NSUTF8StringEncoding
 import platform.Foundation.stringWithContentsOfFile
 
-// @OptIn(UnsafeNumber::class)
-// public actual class Resource actual constructor(private val path: String) {
-//    private val absolutePath = NSBundle.mainBundle.pathForResource(
-//        path.substringBeforeLast("."),
-//        path.substringAfterLast(".")
-//    )
-//
-//    public actual fun exists(): Boolean = absolutePath != null
-//
-//    public actual fun readText(): String = memScoped {
-//        if (absolutePath == null) {
-//            throw FileReadException("$path: No such file or directory")
-//        }
-//        val error = alloc<ObjCObjectVar<NSError?>>()
-//        NSString.stringWithContentsOfFile(absolutePath, NSUTF8StringEncoding, error.ptr)
-//            ?: throw FileReadException("$path: Read failed: ${error.value}")
-//    }
-//
-//    public actual fun readBytes(): ByteArray = memScoped {
-//        if (absolutePath == null) {
-//            throw FileReadException("$path: No such file or directory")
-//        }
-//        val error = alloc<ObjCObjectVar<NSError?>>()
-//        val data = NSData.dataWithContentsOfFile(absolutePath, NSDataReadingUncached, error.ptr)
-//        val bytes = data?.bytes ?: throw FileReadException("$path: Read failed: ${error.value}")
-//        bytes.readBytes(data.length.toInt())
-//    }
-// }
-
 /**
  * Reads the content of a file at the specified path and returns it as a string.
  *
@@ -54,6 +25,7 @@ internal actual fun readPath(path: Path): String = memScoped {
 
     val pathParts = path.toString().split("[.|/]".toRegex())
 
+    println("Path parts: $pathParts")
     val currentPath = NSBundle.mainBundle.pathForResource(
         "resources/${pathParts[3]}",
         pathParts[4]
