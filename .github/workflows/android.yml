@@ -54,12 +54,10 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: Spotless
+      - name: Spotless Apply
         run: ./gradlew :blahblah-fake:spotlessApply --scan :blahblah-yaml:spotlessApply --scan
       - name: Spotless
         run: ./gradlew :blahblah-fake:spotlessCheck --scan :blahblah-yaml:spotlessCheck --scan
-      - name: Ktlint
-        run: ./gradlew :blahblah-fake:ktlintFormat :blahblah-yaml:ktlintFormat
   build:
     name: Build
     runs-on: ubuntu-22.04
