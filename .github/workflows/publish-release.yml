@@ -1,4 +1,4 @@
-name: Publish builds
+name: Publish Maven
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   create-release:
-     if: ${{ github.repository == 'getspherelabs/meteor' }}
+     if: ${{ github.repository == 'getspherelabs/blahblah' }}
      runs-on: ubuntu-latest
      steps:
        - name: Check out code
