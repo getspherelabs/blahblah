@@ -149,11 +149,11 @@ internal class DefaultYamlProvider(
 
         while (params.separator != -1) {
             if (params.check && params.values[
-                params.category.substring(
+                    params.category.substring(
                         0,
                         params.separator
                     )
-            ] == null
+                ] == null
             ) {
                 checkAndSetParams(key, baseParams, params)
             }
