@@ -1,6 +1,10 @@
 package io.spherelabs.blahblahresource
 
 import kotlinx.cinterop.ObjCObjectVar
+import platform.Foundation.NSBundle
+import platform.Foundation.NSString
+import platform.Foundation.NSUTF8StringEncoding
+import platform.Foundation.stringWithContentsOfFile
 
 public actual class Resource {
     public actual fun read(path: String): String {
