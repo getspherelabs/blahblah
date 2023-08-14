@@ -14,11 +14,14 @@ import io.spherelabs.blahblahfake.modules.CommerceModule
 import io.spherelabs.blahblahfake.modules.CompanyModule
 import io.spherelabs.blahblahfake.modules.CompassModule
 import io.spherelabs.blahblahfake.modules.CreditCardModule
+import io.spherelabs.blahblahfake.modules.DemographicModule
+import io.spherelabs.blahblahfake.modules.DessertModule
 import io.spherelabs.blahblahfake.modules.EducationModule
 import io.spherelabs.blahblahfake.modules.EmojiModule
 import io.spherelabs.blahblahfake.modules.EsportsModule
 import io.spherelabs.blahblahfake.modules.FileModule
 import io.spherelabs.blahblahfake.modules.FoodModule
+import io.spherelabs.blahblahfake.modules.FriendsModule
 import io.spherelabs.blahblahfake.modules.GameOfThronesModule
 import io.spherelabs.blahblahfake.modules.HackerModule
 import io.spherelabs.blahblahfake.modules.HipsterModule
@@ -29,6 +32,8 @@ import io.spherelabs.blahblahfake.modules.LoremModule
 import io.spherelabs.blahblahfake.modules.MusicModule
 import io.spherelabs.blahblahfake.modules.NameModule
 import io.spherelabs.blahblahfake.modules.PokemonModule
+import io.spherelabs.blahblahfake.modules.QuoteModule
+import io.spherelabs.blahblahfake.modules.RickyAndMortyModule
 import io.spherelabs.blahblahfake.modules.RockBandModule
 import io.spherelabs.blahblahfake.modules.SpaceModule
 import io.spherelabs.blahblahfake.modules.SuperHeroModule
@@ -79,6 +84,11 @@ public interface BlahBlah {
     public val rockBand: RockBandModule
     public val job: JobModule
     public val uuid: UuidModule
+    public val dessert: DessertModule
+    public val demographic: DemographicModule
+    public val friends: FriendsModule
+    public val rickyAndMorty: RickyAndMortyModule
+    public val quote: QuoteModule
 }
 
 /**
@@ -90,7 +100,7 @@ public interface BlahBlah {
  */
 public fun blah(
     newLocale: String = "en",
-    resourcePath: () -> String = { "src/commonTest/resources/en.yml" }
+    resourcePath: () -> String = { "/en.yml" }
 ): BlahBlah {
     return DefaultBlahBlah(
         configuration = configs {

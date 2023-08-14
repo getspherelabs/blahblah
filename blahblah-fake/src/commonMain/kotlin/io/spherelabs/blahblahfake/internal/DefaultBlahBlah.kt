@@ -14,11 +14,14 @@ import io.spherelabs.blahblahfake.modules.CommerceModule
 import io.spherelabs.blahblahfake.modules.CompanyModule
 import io.spherelabs.blahblahfake.modules.CompassModule
 import io.spherelabs.blahblahfake.modules.CreditCardModule
+import io.spherelabs.blahblahfake.modules.DemographicModule
+import io.spherelabs.blahblahfake.modules.DessertModule
 import io.spherelabs.blahblahfake.modules.EducationModule
 import io.spherelabs.blahblahfake.modules.EmojiModule
 import io.spherelabs.blahblahfake.modules.EsportsModule
 import io.spherelabs.blahblahfake.modules.FileModule
 import io.spherelabs.blahblahfake.modules.FoodModule
+import io.spherelabs.blahblahfake.modules.FriendsModule
 import io.spherelabs.blahblahfake.modules.GameOfThronesModule
 import io.spherelabs.blahblahfake.modules.HackerModule
 import io.spherelabs.blahblahfake.modules.HipsterModule
@@ -29,6 +32,8 @@ import io.spherelabs.blahblahfake.modules.LoremModule
 import io.spherelabs.blahblahfake.modules.MusicModule
 import io.spherelabs.blahblahfake.modules.NameModule
 import io.spherelabs.blahblahfake.modules.PokemonModule
+import io.spherelabs.blahblahfake.modules.QuoteModule
+import io.spherelabs.blahblahfake.modules.RickyAndMortyModule
 import io.spherelabs.blahblahfake.modules.RockBandModule
 import io.spherelabs.blahblahfake.modules.SpaceModule
 import io.spherelabs.blahblahfake.modules.SuperHeroModule
@@ -51,11 +56,14 @@ import io.spherelabs.blahblahfake.modules.commerceModule
 import io.spherelabs.blahblahfake.modules.companyModule
 import io.spherelabs.blahblahfake.modules.compassModule
 import io.spherelabs.blahblahfake.modules.creditCardModule
+import io.spherelabs.blahblahfake.modules.demographicModule
+import io.spherelabs.blahblahfake.modules.dessertModule
 import io.spherelabs.blahblahfake.modules.educationModule
 import io.spherelabs.blahblahfake.modules.emojiModule
 import io.spherelabs.blahblahfake.modules.esportsModule
 import io.spherelabs.blahblahfake.modules.fileModule
 import io.spherelabs.blahblahfake.modules.foodModule
+import io.spherelabs.blahblahfake.modules.friendsModule
 import io.spherelabs.blahblahfake.modules.gameOfThronesModule
 import io.spherelabs.blahblahfake.modules.hackerModule
 import io.spherelabs.blahblahfake.modules.hipsterModule
@@ -66,6 +74,8 @@ import io.spherelabs.blahblahfake.modules.loremModule
 import io.spherelabs.blahblahfake.modules.musicModule
 import io.spherelabs.blahblahfake.modules.nameModule
 import io.spherelabs.blahblahfake.modules.pokemonModule
+import io.spherelabs.blahblahfake.modules.quoteModule
+import io.spherelabs.blahblahfake.modules.rickyAndMortyModule
 import io.spherelabs.blahblahfake.modules.rockBandModule
 import io.spherelabs.blahblahfake.modules.spaceModule
 import io.spherelabs.blahblahfake.modules.superHeroModule
@@ -225,5 +235,25 @@ internal class DefaultBlahBlah(
 
     override val uuid: UuidModule by lazy {
         uuidModule()
+    }
+
+    override val dessert: DessertModule by lazy {
+        dessertModule { configuration.yamlProvider }
+    }
+
+    override val demographic: DemographicModule by lazy {
+        demographicModule { configuration.yamlProvider }
+    }
+
+    override val friends: FriendsModule by lazy {
+        friendsModule { configuration.yamlProvider }
+    }
+
+    override val rickyAndMorty: RickyAndMortyModule by lazy {
+        rickyAndMortyModule { configuration.yamlProvider }
+    }
+
+    override val quote: QuoteModule by lazy {
+        quoteModule { configuration.yamlProvider }
     }
 }

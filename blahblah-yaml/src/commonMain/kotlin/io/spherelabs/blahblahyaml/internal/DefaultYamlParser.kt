@@ -1,10 +1,8 @@
 package io.spherelabs.blahblahyaml.internal
 
-import io.spherelabs.blahblahyaml.config.YamlResource
+import io.spherelabs.blahblahresource.Resource
 import io.spherelabs.blahblahyaml.parser.YamlParser
-import io.spherelabs.blahblahyaml.readPath
 import net.mamoe.yamlkt.Yaml
-import okio.Path.Companion.toPath
 
 /**
  * Default implementation of the YamlParser interface.
@@ -21,9 +19,9 @@ internal class DefaultYamlParser(
     private val sectionKey: String
 ) : YamlParser {
 
-    override fun values(): YamlResource {
+    override fun values(): LinkedHashMap<String, LinkedHashMap<String, String>> {
         // Read YAML content from the file
-        val yamlFile = readPath(path.toPath())
+        val yamlFile = Resource().read(path)
 
         // Decode YAML content into a map
         val yamlValuesDefault = yaml.decodeMapFromString(yamlFile) as Map<*, *>
@@ -31,6 +29,6 @@ internal class DefaultYamlParser(
         // Get locale-specific values
         val localeValuesDefault = yamlValuesDefault[locale] as Map<*, *>
 
-        return localeValuesDefault[sectionKey] as YamlResource
+        return localeValuesDefault[sectionKey] as LinkedHashMap<String, LinkedHashMap<String, String>>
     }
 }
