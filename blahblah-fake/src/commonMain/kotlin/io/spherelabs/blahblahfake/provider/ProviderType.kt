@@ -41,5 +41,10 @@ internal enum class ProviderType {
     LordOfTheRings,
     Zelda,
     RockBand,
-    Job
+    Job,
+    Dessert,
+    Demographic,
+    Friends,
+    RickyAndMorty,
+    Quote
 }

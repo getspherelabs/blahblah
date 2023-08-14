@@ -1,7 +1,5 @@
 package io.spherelabs.blahblahyaml.parser
 
-import io.spherelabs.blahblahyaml.config.YamlResource
-
 /**
  * [YamlParser] for parsing YAML files and retrieving values organized in a specific structure.
  */
@@ -11,5 +9,5 @@ public interface YamlParser {
      *
      * @return A nested LinkedHashMap where the outer map represents sections, and the inner map represents key-value pairs.
      */
-    public fun values(): YamlResource
+    public fun values(): LinkedHashMap<String, LinkedHashMap<String, String>>
 }

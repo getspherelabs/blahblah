@@ -83,6 +83,11 @@ internal class ProviderBuilder {
             ProviderType.Zelda -> ZeldaProvider(yamlProvider)
             ProviderType.RockBand -> RockBandProvider(yamlProvider)
             ProviderType.Job -> JobProvider(yamlProvider)
+            ProviderType.Dessert -> DessertProvider(yamlProvider)
+            ProviderType.Demographic -> DemographicProvider(yamlProvider)
+            ProviderType.Friends -> FriendsProvider(yamlProvider)
+            ProviderType.RickyAndMorty -> RickyAndMortyProvider(yamlProvider)
+            ProviderType.Quote -> QuoteProvider(yamlProvider)
             null -> throw UninitializedProviderTypeException()
         }
     }

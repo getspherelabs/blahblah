@@ -12,5 +12,5 @@ internal data class YamlParam(
     var separator: Int,
     var category: String,
     var check: Boolean,
-    var values: YamlResource
+    var values: LinkedHashMap<String, LinkedHashMap<String, String>>
 )
