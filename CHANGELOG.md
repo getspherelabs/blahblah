@@ -1,3 +1,11 @@
+## [0.2.5] - August 14, 2023
+
+# What's new
+
+- Add new resource module
+- Add new modules
+- Change getting a resource way
+
 ## [0.2.0] - August 12, 2023
 
 # What's new
