@@ -12,7 +12,7 @@ class ValueResolverTest {
         val yamlProvider = yamlProvider {
             yamlParser = yamlParser {
                 resourcePath {
-                    "src/commonTest/resources/en.yml"
+                    "/en.yml"
                 }
                 sectionKey = "blah-blah"
             }

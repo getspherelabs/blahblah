@@ -159,4 +159,37 @@ class ModuleTest {
         assertNotNull(type)
         assertNotNull(subject)
     }
+
+    @Test
+    fun `check the dessert works properly`() {
+        val dessert = blah.dessert
+
+        val flavor = dessert.flavor
+        val topping = dessert.topping
+        val variety = dessert.variety
+
+        assertNotNull(flavor)
+        assertNotNull(topping)
+        assertNotNull(variety)
+    }
+
+    @Test
+    fun `check the demographic works properly`() {
+        val demographic = blah.demographic
+
+        assertNotNull(demographic.demonym)
+        assertNotNull(demographic.sex)
+        assertNotNull(demographic.race)
+        assertNotNull(demographic.maritalStatus)
+        assertNotNull(demographic.educationalAttainment)
+    }
+
+    @Test
+    fun `check the friends works properly`() {
+        val friends = blah.friends
+
+        assertNotNull(friends.character)
+        assertNotNull(friends.location)
+        assertNotNull(friends.quote)
+    }
 }
