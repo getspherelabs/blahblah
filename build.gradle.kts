@@ -13,6 +13,7 @@ plugins {
     id("org.jlleitschuh.gradle.ktlint") version Version.ktlint
     id("com.diffplug.spotless") version "6.17.0"
     id("com.vanniktech.maven.publish") version "0.25.2"
+    id("org.jetbrains.kotlin.jvm") version "1.8.0" apply false
 }
 
 subprojects {

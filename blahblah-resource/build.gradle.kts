@@ -22,25 +22,18 @@ kotlin {
         iosSimulatorArm64(),
     ).forEach {
         it.binaries.framework {
-            baseName = "blahblah-yaml"
+            baseName = "blahblah-resource"
         }
     }
 
     sourceSets {
-        val commonMain by getting {
-            dependencies {
-                implementation(Deps.Yaml.kt)
-                implementation(project(":blahblah-resource"))
-            }
-        }
+        val commonMain by getting
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
             }
         }
-        val androidMain by getting {
-            dependsOn(commonMain)
-        }
+        val androidMain by getting
         val androidUnitTest by getting
         val iosX64Main by getting
         val iosArm64Main by getting
@@ -51,11 +44,9 @@ kotlin {
             iosArm64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
         }
-
         val iosX64Test by getting
         val iosArm64Test by getting
         val iosSimulatorArm64Test by getting
-
         val iosTest by creating {
             dependsOn(commonTest)
             iosX64Test.dependsOn(this)
@@ -66,15 +57,16 @@ kotlin {
 }
 
 tasks.register<Copy>("copyiOSTestResources") {
-    from("src/commonTest/resources")
+    from("src/commonMain/resources")
     into("build/bin/iosX64/debugTest/resources")
 }
 
 tasks.findByName("iosX64Test")!!.dependsOn("copyiOSTestResources")
 
 android {
-    namespace = "io.spherelabs.blahblahyaml"
+    namespace = "io.spherelabs.blahblahresource"
     compileSdk = 33
+
     defaultConfig {
         minSdk = 24
     }
