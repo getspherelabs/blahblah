@@ -23,7 +23,6 @@ kotlin {
     ).forEach {
         it.binaries.framework {
             baseName = "blahblah-yaml"
-            export(project(":blahblah-resource"))
         }
     }
 
@@ -31,7 +30,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(Deps.Yaml.kt)
-                implementation(project(":blahblah-resource"))
+                api(project(":blahblah-resource"))
             }
         }
         val commonTest by getting {
