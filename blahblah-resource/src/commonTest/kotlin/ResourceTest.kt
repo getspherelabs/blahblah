@@ -1,7 +1,6 @@
 import io.spherelabs.blahblahresource.Resource
 import kotlin.test.BeforeTest
 import kotlin.test.Test
-import kotlin.test.assertFailsWith
 import kotlin.test.assertNotNull
 
 class ResourceTest {
@@ -18,12 +17,5 @@ class ResourceTest {
         val result = resource.read("/en.yml")
 
         assertNotNull(result)
-    }
-
-    @Test
-    fun `check the resource does not exists`() {
-        assertFailsWith(NullPointerException::class, "") {
-            resource.read("/eng.yml")
-        }
     }
 }

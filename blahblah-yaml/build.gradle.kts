@@ -23,6 +23,7 @@ kotlin {
     ).forEach {
         it.binaries.framework {
             baseName = "blahblah-yaml"
+            export(project(":blahblah-resource"))
         }
     }
 
@@ -66,7 +67,7 @@ kotlin {
 }
 
 tasks.register<Copy>("copyiOSTestResources") {
-    from("src/commonTest/resources")
+    from("src/commonMain/resources")
     into("build/bin/iosX64/debugTest/resources")
 }
 

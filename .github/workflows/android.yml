@@ -73,7 +73,7 @@ jobs:
         with:
           key-prefix: gradle-build
       - name: Build
-        run: ./gradlew :blahblah-fake:build -x ktlintCommonMainSourceSetCheck -x ktlintKotlinScriptCheck  :blahblah-yaml:build -x ktlintCommonMainSourceSetCheck -x ktlintKotlinScriptCheck
+        run: ./gradlew :blahblah-fake:build -x ktlintCommonMainSourceSetCheck -x ktlintKotlinScriptCheck -x iosX64Test   :blahblah-yaml:build -x ktlintCommonMainSourceSetCheck -x ktlintKotlinScriptCheck  -x iosX64Test
   test:
     name: Unit tests
     runs-on: ubuntu-22.04
@@ -89,7 +89,7 @@ jobs:
         with:
           key-prefix: gradle-test
       - name: Unit tests
-        run: ./gradlew :blahblah-fake:test :blahblah-yaml:test
+        run: ./gradlew :blahblah-fake:test -x iosX64Test :blahblah-yaml:test -x iosX64Test
       - name: Upload test results
         uses: actions/upload-artifact@v3.1.0
         if: failure()

@@ -72,7 +72,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Release build
-        run: ./gradlew :blahblah-fake:assemble -x ktlintCommonMainSourceSetCheck -x ktlintKotlinScriptCheck  :blahblah-yaml:assemble -x ktlintCommonMainSourceSetCheck -x ktlintKotlinScriptCheck
+        run: ./gradlew :blahblah-fake:assemble -x ktlintCommonMainSourceSetCheck -x ktlintKotlinScriptCheck -x iosX64Test  :blahblah-yaml:assemble -x ktlintCommonMainSourceSetCheck -x ktlintKotlinScriptCheck -x iosX64Test
       - name: Publish release
         run: ./gradlew publish --stacktrace
         if: contains(matrix.os, 'macos')

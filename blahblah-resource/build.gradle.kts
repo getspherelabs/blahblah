@@ -48,6 +48,8 @@ kotlin {
         val iosArm64Test by getting
         val iosSimulatorArm64Test by getting
         val iosTest by creating {
+            resources.srcDir("src/commonMain/resources")
+
             dependsOn(commonTest)
             iosX64Test.dependsOn(this)
             iosArm64Test.dependsOn(this)
@@ -57,7 +59,7 @@ kotlin {
 }
 
 tasks.register<Copy>("copyiOSTestResources") {
-    from("src/commonMain/resources")
+    from("$projectDir/src/commonMain/resources")
     into("build/bin/iosX64/debugTest/resources")
 }
 
